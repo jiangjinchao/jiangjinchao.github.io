@@ -1,0 +1,1720 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Rock Salt:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.1.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.1.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.1.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.1.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.1.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="这里记录一些我用到的或者见到的比较好用方便的前端开发相关的工具吧。  色彩与图标CSS滤镜 Filter Effects   界面：      有各种各样的滤镜效果，可以直接调节参数观察变化。   值得一提的是，这个网站还有很多其他 css 生成器。   比如：Border Image, Border Radius, Box Shadow, Filter Effects, Multi-Column">
+<meta name="keywords" content="CSS,tools,reveal,配色">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端的一些资料和工具">
+<meta property="og:url" content="http://www.jiangjinchao.pro/2015/front-end-tools.html">
+<meta property="og:site_name" content="JinChao&#39;s Notes">
+<meta property="og:description" content="这里记录一些我用到的或者见到的比较好用方便的前端开发相关的工具吧。  色彩与图标CSS滤镜 Filter Effects   界面：      有各种各样的滤镜效果，可以直接调节参数观察变化。   值得一提的是，这个网站还有很多其他 css 生成器。   比如：Border Image, Border Radius, Box Shadow, Filter Effects, Multi-Column">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://7q5cdt.com1.z0.glb.clouddn.com/blog-filter.png">
+<meta property="og:image" content="http://7q5cdt.com1.z0.glb.clouddn.com/blog-color-gradient.png">
+<meta property="og:image" content="http://7q5cdt.com1.z0.glb.clouddn.com/blog-RBGScreenColor.png">
+<meta property="og:image" content="http://7q5cdt.com1.z0.glb.clouddn.com/blog-hexSreenColor.png">
+<meta property="og:image" content="http://7q5cdt.com1.z0.glb.clouddn.com/blog-chooseColor.png">
+<meta property="og:image" content="http://7q5cdt.com1.z0.glb.clouddn.com/blog-adobeColorCC.png">
+<meta property="og:image" content="http://7q5cdt.com1.z0.glb.clouddn.com/blog-paletton.png">
+<meta property="og:image" content="http://7q5cdt.com1.z0.glb.clouddn.com/blog-icon.png">
+<meta property="og:image" content="http://7q5cdt.com1.z0.glb.clouddn.com/blog-font awesome.png">
+<meta property="og:image" content="http://7q5cdt.com1.z0.glb.clouddn.com/iconfont.png">
+<meta property="og:image" content="http://7q5cdt.com1.z0.glb.clouddn.com/blog-json.png">
+<meta property="og:image" content="http://7q5cdt.com1.z0.glb.clouddn.com/blog-revealjs.png">
+<meta property="og:updated_time" content="2018-04-04T06:38:30.083Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="前端的一些资料和工具">
+<meta name="twitter:description" content="这里记录一些我用到的或者见到的比较好用方便的前端开发相关的工具吧。  色彩与图标CSS滤镜 Filter Effects   界面：      有各种各样的滤镜效果，可以直接调节参数观察变化。   值得一提的是，这个网站还有很多其他 css 生成器。   比如：Border Image, Border Radius, Box Shadow, Filter Effects, Multi-Column">
+<meta name="twitter:image" content="http://7q5cdt.com1.z0.glb.clouddn.com/blog-filter.png">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="JinChao's Notes" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://www.jiangjinchao.pro/2015/front-end-tools.html"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>前端的一些资料和工具 | JinChao's Notes</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+<!-- 右上角位置 -->
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> 
+
+<div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">JinChao's Notes</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+          
+  <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-bank"></i> <br />首页</a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-book"></i> <br />日志<span class="badge">42</span>
+      </a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">99</span>
+      </a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">21</span>
+      </a>
+</li>
+
+      
+        
+        
+          
+  <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+</li>
+
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.jiangjinchao.pro/2015/front-end-tools.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jiang JinChao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JinChao's Notes">
+    </span>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">前端的一些资料和工具</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-05-18T14:06:05+08:00">2015-05-18</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Tools/" itemprop="url" rel="index"><span itemprop="name">Tools</span></a></span>
+
+                
+                
+              
+            </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2015/front-end-tools.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/2015/front-end-tools.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+
+      
+      <span class="post-meta-divider">|</span>
+      <span class="fa fa-file-word-o">  </span>
+      <span class="post-meta-divider">|</span>
+      <span class="fa fa-clock-o">  min</span>
+
+
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>这里记录一些我用到的或者见到的比较好用方便的前端开发相关的工具吧。</p>
+<hr>
+<h2 id="色彩与图标"><a href="#色彩与图标" class="headerlink" title="色彩与图标"></a>色彩与图标</h2><h3 id="CSS滤镜"><a href="#CSS滤镜" class="headerlink" title="CSS滤镜"></a>CSS滤镜</h3><ul>
+<li><p><a href="http://www.cssreflex.com/css-generators/filter" target="_blank" rel="noopener">Filter Effects</a></p>
+<p>  界面：</p>
+<p>  <img src="http://7q5cdt.com1.z0.glb.clouddn.com/blog-filter.png" alt="Filter Effects"></p>
+<p>  有各种各样的滤镜效果，可以直接调节参数观察变化。</p>
+<p>  值得一提的是，这个网站还有很多其他 css 生成器。</p>
+<p>  比如：Border Image, Border Radius, Box Shadow, Filter Effects, Multi-Column, Outline Border, Overflow(x,y), RGBa, Text Rotate, Text Shadow, Textarea Resize, Transform</p>
+</li>
+<li><p>可以访问这里去使用这些 css 生成器：<a href="http://www.cssreflex.com/css-generators/" target="_blank" rel="noopener">CSS Generators</a></p>
+<a id="more"></a>
+</li>
+</ul>
+<hr>
+<h3 id="渐变CSS代码生成器"><a href="#渐变CSS代码生成器" class="headerlink" title="渐变CSS代码生成器"></a>渐变CSS代码生成器</h3><ul>
+<li><p><a href="http://www.colorzilla.com/gradient-editor/" target="_blank" rel="noopener">Ultimate CSS Gradient Generator</a></p>
+<p>  界面如下图：</p>
+<p>  <img src="http://7q5cdt.com1.z0.glb.clouddn.com/blog-color-gradient.png" alt="Ultimate CSS Gradient Generator"></p>
+<p>  目前 css 写渐变还很复杂，但是用了这个工具简直太方便了，直接生成 css 代码，还能兼容 ie。</p>
+</li>
+</ul>
+<hr>
+<h3 id="QQ截图取色-16进制"><a href="#QQ截图取色-16进制" class="headerlink" title="QQ截图取色-16进制"></a>QQ截图取色-16进制</h3><p>在按下 <code>Ctrl+Shift+A</code> 后，再按一下 <code>Ctrl</code> 就可以看到截图框下面的颜色代码变成16进制的代码了。</p>
+<p>如下图：</p>
+<p>普通截图：</p>
+<p><img src="http://7q5cdt.com1.z0.glb.clouddn.com/blog-RBGScreenColor.png" alt="normal"></p>
+<p>按住 <code>Ctrl</code>：</p>
+<p><img src="http://7q5cdt.com1.z0.glb.clouddn.com/blog-hexSreenColor.png" alt="press ctrl"></p>
+<p>可以看到第一幅图中的 51, 51, 51 变成了 #333333。</p>
+<hr>
+<h3 id="配色"><a href="#配色" class="headerlink" title="配色"></a>配色</h3><ul>
+<li><p><a href="http://nipponcolors.com/" target="_blank" rel="noopener">nipponcolors</a></p>
+<p>  日本的一个配色网站。罗列了很多不饱和经典的颜色，当然，自己选配还是很重要的。</p>
+<p>  <img src="http://7q5cdt.com1.z0.glb.clouddn.com/blog-chooseColor.png" alt="nipponcolors"></p>
+</li>
+<li><p><a href="https://color.adobe.com/zh/explore/most-popular/?time=all" target="_blank" rel="noopener">Adobe Color CC</a></p>
+<p>  Adobe 出的在线配色工具，里面有些现成的配色方案还是很不错的。</p>
+<p>  <img src="http://7q5cdt.com1.z0.glb.clouddn.com/blog-adobeColorCC.png" alt="Adobe Color CC"></p>
+</li>
+<li><p><a href="http://paletton.com/" target="_blank" rel="noopener">paletton</a></p>
+<p>  提供了各种预览模式，可以在模板网站中预览，在色块中预览。</p>
+<p>  <img src="http://7q5cdt.com1.z0.glb.clouddn.com/blog-paletton.png" alt="paletton"></p>
+</li>
+</ul>
+<hr>
+<h3 id="图标"><a href="#图标" class="headerlink" title="图标"></a>图标</h3><ul>
+<li><p><a href="http://www.easyicon.net/" target="_blank" rel="noopener">easyicon</a></p>
+<p>  对中文的搜索支持很好。实际上它是先把中文翻译为英文再搜索的。</p>
+<p>  <img src="http://7q5cdt.com1.z0.glb.clouddn.com/blog-icon.png" alt="easyicon"></p>
+</li>
+<li><p><a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank" rel="noopener">Font-Awesome</a></p>
+<p>  比上面介绍的那个好用的多，字体图标，不需要考虑像素大小，全部是矢量图。并且图标精美。如果不使用 BootStrap，单独添加图标的话，这一套图标在合适不过了。</p>
+<p>  <img src="http://7q5cdt.com1.z0.glb.clouddn.com/blog-font awesome.png" alt="Font-Awesome"></p>
+</li>
+<li><p><a href="http://www.iconfont.cn/" target="_blank" rel="noopener">iconfont.cn</a></p>
+<p>  阿里巴巴制作的图标库。</p>
+<p>  <img src="http://7q5cdt.com1.z0.glb.clouddn.com/iconfont.png" alt="iconfont"></p>
+</li>
+</ul>
+<hr>
+<h2 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h2><h3 id="Json"><a href="#Json" class="headerlink" title="Json"></a>Json</h3><ul>
+<li><p><a href="http://braincast.nl/samples/jsoneditor/" target="_blank" rel="noopener">json editor</a></p>
+<p>  将json数据输入进去，会生成一个树形的结构，方便查看每个节点。</p>
+<p>  <img src="http://7q5cdt.com1.z0.glb.clouddn.com/blog-json.png" alt="jsoneditor"></p>
+</li>
+</ul>
+<hr>
+<h2 id="展示"><a href="#展示" class="headerlink" title="展示"></a>展示</h2><h3 id="reveal-js"><a href="#reveal-js" class="headerlink" title="reveal.js"></a>reveal.js</h3><ul>
+<li><p><a href="https://github.com/hakimel/reveal.js" target="_blank" rel="noopener">reveal.js</a></p>
+<p>  在网页上展示 slides 幻灯片，太酷了。针对不会代码的人还有一个在线编辑器：<a href="http://slides.com" target="_blank" rel="noopener">http://slides.com</a></p>
+<p>  还有一个新手入门教程：<a href="http://htmlcheats.com/reveal-js/reveal-js-tutorial-reveal-js-for-beginners/" target="_blank" rel="noopener">Reveal.js Tutorial-Reveal.js for Beginners</a></p>
+<p>  <img src="http://7q5cdt.com1.z0.glb.clouddn.com/blog-revealjs.png" alt="reveal"></p>
+</li>
+</ul>
+<p>本文不定期更新。</p>
+
+      
+    </div>
+
+    
+      
+
+
+    
+
+ 
+    <div>
+  
+    
+
+
+
+
+  
+    </div>
+
+    
+    
+    
+
+    
+
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Jiang JinChao</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://www.jiangjinchao.pro/2015/front-end-tools.html" title="前端的一些资料和工具">http://www.jiangjinchao.pro/2015/front-end-tools.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CSS/" rel="tag"><i class="fa fa-tag"></i>CSS</a>
+          
+            <a href="/tags/tools/" rel="tag"><i class="fa fa-tag"></i>tools</a>
+          
+            <a href="/tags/reveal/" rel="tag"><i class="fa fa-tag"></i>reveal</a>
+          
+            <a href="/tags/配色/" rel="tag"><i class="fa fa-tag"></i>配色</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/baidu-ife-2-javascript.html" rel="next" title="百度Web前端技术学院(2)-JavaScript 基础">
+                <i class="fa fa-chevron-left"></i> 百度Web前端技术学院(2)-JavaScript 基础
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/scope.html" rel="prev" title="JavaScript 作用域和作用域链">
+                JavaScript 作用域和作用域链 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="Jiang JinChao" />
+            
+              <p class="site-author-name" itemprop="name">Jiang JinChao</p>
+              <p class="site-description motion-element" itemprop="description">The dog equally study, the gentleman equally plays.</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">42</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">21</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">99</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:jinchao36@163.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://500px.com/jinchao36" target="_blank" title="500px"><i class="fa fa-fw fa-500px"></i>500px</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://twitter.com/jinchao36" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.facebook.com/jinchao.jiang" target="_blank" title="Facebook"><i class="fa fa-fw fa-facebook"></i>Facebook</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+                <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#色彩与图标"><span class="nav-number">1.</span> <span class="nav-text">色彩与图标</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS滤镜"><span class="nav-number">1.1.</span> <span class="nav-text">CSS滤镜</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#渐变CSS代码生成器"><span class="nav-number">1.2.</span> <span class="nav-text">渐变CSS代码生成器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#QQ截图取色-16进制"><span class="nav-number">1.3.</span> <span class="nav-text">QQ截图取色-16进制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配色"><span class="nav-number">1.4.</span> <span class="nav-text">配色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图标"><span class="nav-number">1.5.</span> <span class="nav-text">图标</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据处理"><span class="nav-number">2.</span> <span class="nav-text">数据处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Json"><span class="nav-number">2.1.</span> <span class="nav-text">Json</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#展示"><span class="nav-number">3.</span> <span class="nav-text">展示</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#reveal-js"><span class="nav-number">3.1.</span> <span class="nav-text">reveal.js</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2012 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jiang JinChao</span>
+
+  
+
+
+
+
+
+<span class="post-meta-divider">|</span>
+<span class="fa fa-area-chart"></span>
+<span class="post-meta-divider">|</span>
+<i class="fa fa-coffee"></i> 12:06</span>
+
+
+
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.0</div>
+
+
+
+
+
+
+
+
+
+<span class="post-meta-divider">|</span>
+<span class="theme-link">感谢</span>
+<span class="fa fa-github"><a href="https://github.com">GitHub</a>提供开源与托管服务</span>
+
+
+<span class="post-meta-divider">|</span>
+<span class="fa fa-skyatlas">图床-<a href="https://www.qiniu.com">七牛云</a></span>
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.1.0"></script>
+
+
+
+  
+
+  
+    <script id="dsq-count-scr" src="https://jiangjinchao.disqus.com/count.js" async></script>
+  
+
+  
+    <script type="text/javascript">
+      var disqus_config = function () {
+        this.page.url = 'http://www.jiangjinchao.pro/2015/front-end-tools.html';
+        this.page.identifier = '/2015/front-end-tools.html';
+        this.page.title = '前端的一些资料和工具';
+      };
+      function loadComments () {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://jiangjinchao.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      }
+      
+        loadComments();
+      
+    </script>
+  
+
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+  
+
+  
+  
+
+  
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
+  <script type="text/javascript">
+  
+    bookmark.scrollToMark('auto', "#more");
+  
+  </script>
+
+
+</body>
+</html>
+
+<!-- 页面点击小红心 -->
+<!--
+<script type="text/javascript" src="/js/src/love.js"></script>
+-->
