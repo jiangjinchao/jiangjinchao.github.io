@@ -386,7 +386,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.jiangjinchao.pro/2015/随机不重复数值.html">
+    <link itemprop="mainEntityOfPage" href="http://www.jiangjinchao.pro/2015/应用SPSS进行沥青路面压实度的动态控制.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jiang JinChao">
@@ -421,7 +421,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2015/随机不重复数值.html" itemprop="url">Excel VBA数值随机不重复函数</a></h1>
+                <a class="post-title-link" href="/2015/应用SPSS进行沥青路面压实度的动态控制.html" itemprop="url">应用SPSS进行沥青路面压实度的动态控制</a></h1>
         
 
         <div class="post-meta">
@@ -433,7 +433,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-06-22T09:06:05+08:00">2015-06-22</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-08-05T00:00:00+08:00">2015-08-05</time>
             
 
             
@@ -454,7 +454,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/VBA/" itemprop="url" rel="index"><span itemprop="name">VBA</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/沥青混合料/" itemprop="url" rel="index"><span itemprop="name">沥青混合料</span></a></span>
 
                 
                 
@@ -470,9 +470,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2015/随机不重复数值.html#comments" itemprop="discussionUrl">
+                <a href="/2015/应用SPSS进行沥青路面压实度的动态控制.html#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="/2015/随机不重复数值.html" itemprop="commentCount"></span>
+                        data-disqus-identifier="/2015/应用SPSS进行沥青路面压实度的动态控制.html" itemprop="commentCount"></span>
                 </a>
               </span>
 
@@ -511,12 +511,399 @@
 
       
         
-          
-             <a id="more"></a>
-<p>代码如下：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">sub a()</span><br><span class="line"></span><br><span class="line">  Const bb As Integer = <span class="number">1000</span> - <span class="number">1</span></span><br><span class="line"></span><br><span class="line">  Dim RndNumber, TempArray(bb), kk(bb), i As Integer</span><br><span class="line"></span><br><span class="line">  Randomize (Timer)</span><br><span class="line"></span><br><span class="line">For i = <span class="number">0</span> To bb</span><br><span class="line"></span><br><span class="line">      TempArray(i) = i</span><br><span class="line"></span><br><span class="line">  Next i</span><br><span class="line"></span><br><span class="line">  j = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">  For i = bb To <span class="number">1</span> Step <span class="number">-1</span></span><br><span class="line"></span><br><span class="line">     RndNumber = Int(i * Rnd)</span><br><span class="line"></span><br><span class="line">     kk(i) = TempArray(RndNumber) + <span class="number">1</span> <span class="string">' 随机不重复数值</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">     TempArray(RndNumber) = TempArray(i)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">     j = j + 1</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">  Next i</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">end sub</span></span><br></pre></td></tr></table></figure>
+          <h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><blockquote>
+<p>本文主要通过介绍应用“贝雷法”对级配进行系统设计与检验，在生产管理过程应用SPSS对贝雷参数进行动态跟踪管理，并通过矿料间隙率（VMA）与贝雷参数的回归方程的模型建立，在沥青碎石混合料（ATb-25）中的应用，从别一个角度介绍沥青混凝土路面施工过程中对混合料级配的质量管理与控制措施，从而保障沥青路面施工质量。</p>
+</blockquote>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我国在沥青路面配合设计过程中的级配选定主要通过规范与设计图给予的上下限范围，在范围内进行选定，同时要求配合比设计人员具有一定的工作经验才能选择出一条合理具有实施性的级配线，所以在选定级配时具有很强的主观性，而同时，这十几年高速公路大建设过程中，伴随社会经济不断发展，交通量猛增，造成早期路面损坏较为严重，在病害的原因分析过程中，有不少因级配设计的不合理所造成的。本文主要通过介绍贝雷法及贝雷参数在湄渝高速公路三明段ATb-25柔性基层配合比级配上选定与施工过程中的应用，并取得很好效果。</p>
+<h2 id="贝雷法级配检验分析"><a href="#贝雷法级配检验分析" class="headerlink" title="贝雷法级配检验分析"></a>贝雷法级配检验分析</h2><p>“贝雷法”级配设计法是美国伊利诺州交通局Robert D. Bailey先生研究的一套系统的设计和检验沥青混合料级配的方法，该级配被称为嵌挤密实结构级配设计法。适用于多类沥青混合料配合比设计,如Superpave方法、马歇尔设计法等结合使用，在我国与马歇尔设计法配合使用，能够很好设计出良好的嵌挤结构，进一步提高沥青混合料的高温稳定性与耐久性。</p>
+<p>贝雷法主要特征是通过控制粗细集料关键筛孔尺寸的通过率比例关系，让矿料级配获得良好的骨架结构。利用平面圆作为数学模型，以干涉理论作为理论设计依据，考虑了不同集料性状组合和组合后的空隙。粗颗粒间空隙尺寸的大小取决于颗粒形状和尺寸，<code>如图1</code>所示。</p>
+<p><img src="http://p5mgr4bgm.bkt.clouddn.com/15229074398272.jpg" alt="图一-w600"><br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2015/应用SPSS进行沥青路面压实度的动态控制.html" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+ 
+    <div>
+  
+    </div>
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.jiangjinchao.pro/2015/low-IE-click-empty-block-bug.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jiang JinChao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JinChao's Notes">
+    </span>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/low-IE-click-empty-block-bug.html" itemprop="url">在低版本 IE 中点击空 block 元素的问题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-07-24T00:06:05+08:00">2015-07-24</time>
+            
+
+            
+            
+
+            
+          </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/CSS/" itemprop="url" rel="index"><span itemprop="name">CSS</span></a></span>
+
+                
+                
+              
+            </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2015/low-IE-click-empty-block-bug.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/2015/low-IE-click-empty-block-bug.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+
+      
+      <span class="post-meta-divider">|</span>
+      <span class="fa fa-file-word-o">  </span>
+      <span class="post-meta-divider">|</span>
+      <span class="fa fa-clock-o">  min</span>
+
+
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>当我们点击一个空的、没有任何内容的 div 或者其他块级元素时。在 IE11 以下，是没有反应的。</p>
+<h2 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h2><p>这类问题使用场景还是很普遍的。比如 UI 给了一张大图，要点击图上的某一块位置的时候。可以用一个空的 div 定位到相应的位置，然后对它进行绑定事件。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2015/low-IE-click-empty-block-bug.html" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+ 
+    <div>
+  
+    </div>
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.jiangjinchao.pro/2015/JavaScript-Net.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jiang JinChao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JinChao's Notes">
+    </span>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/JavaScript-Net.html" itemprop="url">JavaScript 阶段总结</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-07-09T00:06:05+08:00">2015-07-09</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/JavaScript/" itemprop="url" rel="index"><span itemprop="name">JavaScript</span></a></span>
+
+                
+                
+              
+            </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2015/JavaScript-Net.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/2015/JavaScript-Net.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+
+      
+      <span class="post-meta-divider">|</span>
+      <span class="fa fa-file-word-o">  </span>
+      <span class="post-meta-divider">|</span>
+      <span class="fa fa-clock-o">  min</span>
+
+
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>做了一张思维导图。总结这几个月对 JavaScript 的学习吧，也是一个复习。也是我目前的技能树。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2015/JavaScript-Net.html" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -706,6 +1093,193 @@
             </a>
           </div>
           <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+ 
+    <div>
+  
+    </div>
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.jiangjinchao.pro/2015/随机不重复数值.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jiang JinChao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JinChao's Notes">
+    </span>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2015/随机不重复数值.html" itemprop="url">Excel VBA数值随机不重复函数</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-06-22T09:06:05+08:00">2015-06-22</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/VBA/" itemprop="url" rel="index"><span itemprop="name">VBA</span></a></span>
+
+                
+                
+              
+            </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2015/随机不重复数值.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="/2015/随机不重复数值.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+
+      
+      <span class="post-meta-divider">|</span>
+      <span class="fa fa-file-word-o">  </span>
+      <span class="post-meta-divider">|</span>
+      <span class="fa fa-clock-o">  min</span>
+
+
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+             <a id="more"></a>
+<p>代码如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">sub a()</span><br><span class="line"></span><br><span class="line">  Const bb As Integer = <span class="number">1000</span> - <span class="number">1</span></span><br><span class="line"></span><br><span class="line">  Dim RndNumber, TempArray(bb), kk(bb), i As Integer</span><br><span class="line"></span><br><span class="line">  Randomize (Timer)</span><br><span class="line"></span><br><span class="line">For i = <span class="number">0</span> To bb</span><br><span class="line"></span><br><span class="line">      TempArray(i) = i</span><br><span class="line"></span><br><span class="line">  Next i</span><br><span class="line"></span><br><span class="line">  j = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">  For i = bb To <span class="number">1</span> Step <span class="number">-1</span></span><br><span class="line"></span><br><span class="line">     RndNumber = Int(i * Rnd)</span><br><span class="line"></span><br><span class="line">     kk(i) = TempArray(RndNumber) + <span class="number">1</span> <span class="string">' 随机不重复数值</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">     TempArray(RndNumber) = TempArray(i)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">     j = j + 1</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">  Next i</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">end sub</span></span><br></pre></td></tr></table></figure>
+
+          
         
       
     </div>
@@ -1689,592 +2263,6 @@ console.log(func()); //30
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2015/JavaScript-function.html" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
- 
-    <div>
-  
-    </div>
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.jiangjinchao.pro/2015/浅谈倒装式沥青路面结构在福建高速中的应用.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jiang JinChao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JinChao's Notes">
-    </span>
-
-<script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https'){
-   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-  }
-  else{
-  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-  }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
-
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/浅谈倒装式沥青路面结构在福建高速中的应用.html" itemprop="url">浅谈倒装式沥青路面结构在福建高速中的应用</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-06-05T00:00:00+08:00">2015-06-05</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/沥青路面/" itemprop="url" rel="index"><span itemprop="name">沥青路面</span></a></span>
-
-                
-                
-              
-            </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2015/浅谈倒装式沥青路面结构在福建高速中的应用.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="/2015/浅谈倒装式沥青路面结构在福建高速中的应用.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-
-      
-      <span class="post-meta-divider">|</span>
-      <span class="fa fa-file-word-o">  </span>
-      <span class="post-meta-divider">|</span>
-      <span class="fa fa-clock-o">  min</span>
-
-
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <blockquote>
-<p>福建省第一条高速公路，福泉高速公路从1999年正式开通，到2015年”十二五”末，已建成通车里程4817公里，并实现县县通高速目标。这十几年高速公路大建设过程中，伴随社会经济不断发展，交通量猛增，造成早期路面损坏较为严重,例如反射裂缝。本文结合福建省高速建设工作实际，介绍沥青碎石、级配碎石与稳定粒料半刚性基层组合结构形式（简称倒装式），有效减少路面反射性裂缝，延长道路使用寿命，减少管奍费用，提高社会经济效益。</p>
-</blockquote>
-<h2 id="路面结构的分析"><a href="#路面结构的分析" class="headerlink" title="路面结构的分析"></a>路面结构的分析</h2><h3 id="半刚性基层沥青路面特点"><a href="#半刚性基层沥青路面特点" class="headerlink" title="半刚性基层沥青路面特点"></a>半刚性基层沥青路面特点</h3><p>早期福建省高速路面结构设计一般奉行”强基、薄面、稳路基”的方针。采用18cm沥青面层+20cm5%水泥稳定碎石半刚性基层+30cm3%水泥稳定碎石半刚性底基层的结构组合形式（例如福宁高速、京福高速），该结构统称为半刚性基层沥青路面层结构，具有承载力、刚度大、模量高、板体性强、且变沉小等特点，是我国沥青路面的主要结构形式。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2015/浅谈倒装式沥青路面结构在福建高速中的应用.html" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
- 
-    <div>
-  
-    </div>
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.jiangjinchao.pro/2015/scope.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jiang JinChao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JinChao's Notes">
-    </span>
-
-<script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https'){
-   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-  }
-  else{
-  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-  }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
-
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/scope.html" itemprop="url">JavaScript 作用域和作用域链</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-05-20T14:06:05+08:00">2015-05-20</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/JavaScript/" itemprop="url" rel="index"><span itemprop="name">JavaScript</span></a></span>
-
-                
-                
-              
-            </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2015/scope.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="/2015/scope.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-
-      
-      <span class="post-meta-divider">|</span>
-      <span class="fa fa-file-word-o">  </span>
-      <span class="post-meta-divider">|</span>
-      <span class="fa fa-clock-o">  min</span>
-
-
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="JavaScript-作用域"><a href="#JavaScript-作用域" class="headerlink" title="JavaScript 作用域"></a>JavaScript 作用域</h2><p>作用域就是变量与函数的可访问范围。在JavaScript中，变量的作用域有全局作用域和局部作用域两种。</p>
-<hr>
-<h3 id="全局作用域-Global-Scope"><a href="#全局作用域-Global-Scope" class="headerlink" title="全局作用域(Global Scope)"></a>全局作用域(Global Scope)</h3><p>在代码中任何地方都能访问到的对象拥有全局作用域，一般来说以下 3 种情形拥有全局作用域。</p>
-<ol>
-<li>最外层函数和在最外层函数外面定义的变量拥有全局作用域</li>
-</ol>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> outVariable = <span class="string">"我是最外层变量"</span>; <span class="comment">//最外层变量</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">outFun</span>(<span class="params"></span>) </span>&#123; <span class="comment">//最外层函数</span></span><br><span class="line">    <span class="keyword">var</span> inVariable = <span class="string">"内层变量"</span>;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">innerFun</span>(<span class="params"></span>) </span>&#123; <span class="comment">//内层函数</span></span><br><span class="line">        <span class="built_in">console</span>.log(inVariable);</span><br><span class="line">    &#125;</span><br><span class="line">    innerFun();</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(outVariable); <span class="comment">//我是最外层变量</span></span><br><span class="line">outFun(); <span class="comment">//内层变量</span></span><br><span class="line"><span class="built_in">console</span>.log(inVariable); <span class="comment">//inVariable is not defined</span></span><br><span class="line">innerFun(); <span class="comment">//innerFun is not defined</span></span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2015/scope.html" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
- 
-    <div>
-  
-    </div>
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.jiangjinchao.pro/2015/front-end-tools.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jiang JinChao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JinChao's Notes">
-    </span>
-
-<script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https'){
-   bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-  }
-  else{
-  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-  }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script>
-
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/front-end-tools.html" itemprop="url">前端的一些资料和工具</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-05-18T14:06:05+08:00">2015-05-18</time>
-            
-
-            
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Tools/" itemprop="url" rel="index"><span itemprop="name">Tools</span></a></span>
-
-                
-                
-              
-            </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2015/front-end-tools.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="/2015/front-end-tools.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-
-      
-      <span class="post-meta-divider">|</span>
-      <span class="fa fa-file-word-o">  </span>
-      <span class="post-meta-divider">|</span>
-      <span class="fa fa-clock-o">  min</span>
-
-
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>这里记录一些我用到的或者见到的比较好用方便的前端开发相关的工具吧。</p>
-<hr>
-<h2 id="色彩与图标"><a href="#色彩与图标" class="headerlink" title="色彩与图标"></a>色彩与图标</h2><h3 id="CSS滤镜"><a href="#CSS滤镜" class="headerlink" title="CSS滤镜"></a>CSS滤镜</h3><ul>
-<li><p><a href="http://www.cssreflex.com/css-generators/filter" target="_blank" rel="noopener">Filter Effects</a></p>
-<p>  界面：</p>
-<p>  <img src="http://7q5cdt.com1.z0.glb.clouddn.com/blog-filter.png" alt="Filter Effects"></p>
-<p>  有各种各样的滤镜效果，可以直接调节参数观察变化。</p>
-<p>  值得一提的是，这个网站还有很多其他 css 生成器。</p>
-<p>  比如：Border Image, Border Radius, Box Shadow, Filter Effects, Multi-Column, Outline Border, Overflow(x,y), RGBa, Text Rotate, Text Shadow, Textarea Resize, Transform</p>
-</li>
-<li><p>可以访问这里去使用这些 css 生成器：<a href="http://www.cssreflex.com/css-generators/" target="_blank" rel="noopener">CSS Generators</a></p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2015/front-end-tools.html" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
