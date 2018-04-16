@@ -217,6 +217,33 @@
   </entry>
   
   <entry>
+    <title>Git 如何 clone 非 master 分支的代码</title>
+    <link href="http://www.jiangjinchao.pro//2018/git-clone-not-master-branch.html"/>
+    <id>http://www.jiangjinchao.pro//2018/git-clone-not-master-branch.html</id>
+    <published>2018-03-30T01:15:16.121Z</published>
+    <updated>2018-04-04T06:41:06.362Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;我们每次使用命令&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone git@gitlab.xxx.com:xxxxx.git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;默认 clone 的是这个仓库的 master 分支。如果最新的代码不在 master 分支上，该如何拿到呢？如下图所示，最新的代码可能在&lt;code&gt;daily/1.4.1&lt;/code&gt;分支上，我们希望拿到这个分支上的代码。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ooo.0o0.ooo/2016/07/07/577e349ab42ed.png&quot; alt=&quot;7f07c8f6deef169ef6be5103bbd3e932f8676bb1.png&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="GitHub" scheme="http://www.jiangjinchao.pro/categories/GitHub/"/>
+    
+    
+      <category term="Git" scheme="http://www.jiangjinchao.pro/tags/Git/"/>
+    
+      <category term="GitHub" scheme="http://www.jiangjinchao.pro/tags/GitHub/"/>
+    
+      <category term="分支" scheme="http://www.jiangjinchao.pro/tags/%E5%88%86%E6%94%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Fisher–Yates shuffle 洗牌算法</title>
     <link href="http://www.jiangjinchao.pro//2018/shuffle-algorithm.html"/>
     <id>http://www.jiangjinchao.pro//2018/shuffle-algorithm.html</id>
@@ -245,29 +272,34 @@
   </entry>
   
   <entry>
-    <title>Git 如何 clone 非 master 分支的代码</title>
-    <link href="http://www.jiangjinchao.pro//2018/git-clone-not-master-branch.html"/>
-    <id>http://www.jiangjinchao.pro//2018/git-clone-not-master-branch.html</id>
-    <published>2018-03-30T01:15:16.121Z</published>
-    <updated>2018-04-04T06:41:06.362Z</updated>
+    <title>如何使用 babel</title>
+    <link href="http://www.jiangjinchao.pro//2018/how-to-use-babel.html"/>
+    <id>http://www.jiangjinchao.pro//2018/how-to-use-babel.html</id>
+    <published>2018-03-30T00:50:23.543Z</published>
+    <updated>2018-04-04T06:40:53.208Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h2&gt;&lt;p&gt;我们每次使用命令&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone git@gitlab.xxx.com:xxxxx.git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;默认 clone 的是这个仓库的 master 分支。如果最新的代码不在 master 分支上，该如何拿到呢？如下图所示，最新的代码可能在&lt;code&gt;daily/1.4.1&lt;/code&gt;分支上，我们希望拿到这个分支上的代码。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://ooo.0o0.ooo/2016/07/07/577e349ab42ed.png&quot; alt=&quot;7f07c8f6deef169ef6be5103bbd3e932f8676bb1.png&quot;&gt;&lt;br&gt;
+      &lt;p&gt;&lt;a href=&quot;https://babeljs.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Babel&lt;/a&gt; 用于将 ES6 的代码转化为 ES5，使得 ES6 可以在目前的浏览器环境下使用。学习使用 babel 是为了使用 ES2015 做准备。本文将介绍如何使用 babel，以及一些相关的配置。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://babeljs.io/images/logo.svg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;学习 Babel 可以通过其手册 Babel handbook。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/thejameskyle/babel-handbook&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;babel-handbook&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;其中包含多语言版本，分为&lt;a href=&quot;https://github.com/thejameskyle/babel-handbook/blob/master/translations/zh-Hans/user-handbook.md&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;用户手册&lt;/a&gt;和&lt;a href=&quot;https://github.com/thejameskyle/babel-handbook/blob/master/translations/zh-Hans/plugin-handbook.md&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;插件手册&lt;/a&gt;。这是一个很好的学习 Babel 的资料。&lt;br&gt;
     
     </summary>
     
-      <category term="GitHub" scheme="http://www.jiangjinchao.pro/categories/GitHub/"/>
+      <category term="JavaScript" scheme="http://www.jiangjinchao.pro/categories/JavaScript/"/>
     
     
-      <category term="Git" scheme="http://www.jiangjinchao.pro/tags/Git/"/>
+      <category term="ES2015" scheme="http://www.jiangjinchao.pro/tags/ES2015/"/>
     
-      <category term="GitHub" scheme="http://www.jiangjinchao.pro/tags/GitHub/"/>
+      <category term="ES6" scheme="http://www.jiangjinchao.pro/tags/ES6/"/>
     
-      <category term="分支" scheme="http://www.jiangjinchao.pro/tags/%E5%88%86%E6%94%AF/"/>
+      <category term="ES5" scheme="http://www.jiangjinchao.pro/tags/ES5/"/>
+    
+      <category term="babel" scheme="http://www.jiangjinchao.pro/tags/babel/"/>
     
   </entry>
   
@@ -306,38 +338,6 @@
   </entry>
   
   <entry>
-    <title>如何使用 babel</title>
-    <link href="http://www.jiangjinchao.pro//2018/how-to-use-babel.html"/>
-    <id>http://www.jiangjinchao.pro//2018/how-to-use-babel.html</id>
-    <published>2018-03-30T00:50:23.543Z</published>
-    <updated>2018-04-04T06:40:53.208Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://babeljs.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Babel&lt;/a&gt; 用于将 ES6 的代码转化为 ES5，使得 ES6 可以在目前的浏览器环境下使用。学习使用 babel 是为了使用 ES2015 做准备。本文将介绍如何使用 babel，以及一些相关的配置。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://babeljs.io/images/logo.svg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;学习 Babel 可以通过其手册 Babel handbook。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/thejameskyle/babel-handbook&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;babel-handbook&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;其中包含多语言版本，分为&lt;a href=&quot;https://github.com/thejameskyle/babel-handbook/blob/master/translations/zh-Hans/user-handbook.md&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;用户手册&lt;/a&gt;和&lt;a href=&quot;https://github.com/thejameskyle/babel-handbook/blob/master/translations/zh-Hans/plugin-handbook.md&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;插件手册&lt;/a&gt;。这是一个很好的学习 Babel 的资料。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="http://www.jiangjinchao.pro/categories/JavaScript/"/>
-    
-    
-      <category term="ES2015" scheme="http://www.jiangjinchao.pro/tags/ES2015/"/>
-    
-      <category term="ES6" scheme="http://www.jiangjinchao.pro/tags/ES6/"/>
-    
-      <category term="ES5" scheme="http://www.jiangjinchao.pro/tags/ES5/"/>
-    
-      <category term="babel" scheme="http://www.jiangjinchao.pro/tags/babel/"/>
-    
-  </entry>
-  
-  <entry>
     <title>JavaScript 语言精粹笔记1-语法、对象、函数</title>
     <link href="http://www.jiangjinchao.pro//2018/JavaScript-good-parts-note1.html"/>
     <id>http://www.jiangjinchao.pro//2018/JavaScript-good-parts-note1.html</id>
@@ -360,9 +360,9 @@
     
       <category term="面向对象" scheme="http://www.jiangjinchao.pro/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
     
-      <category term="函数" scheme="http://www.jiangjinchao.pro/tags/%E5%87%BD%E6%95%B0/"/>
-    
       <category term="闭包" scheme="http://www.jiangjinchao.pro/tags/%E9%97%AD%E5%8C%85/"/>
+    
+      <category term="函数" scheme="http://www.jiangjinchao.pro/tags/%E5%87%BD%E6%95%B0/"/>
     
       <category term="对象" scheme="http://www.jiangjinchao.pro/tags/%E5%AF%B9%E8%B1%A1/"/>
     
@@ -519,13 +519,13 @@
     
       <category term="贝雷参数" scheme="http://www.jiangjinchao.pro/tags/%E8%B4%9D%E9%9B%B7%E5%8F%82%E6%95%B0/"/>
     
-      <category term="SPSS" scheme="http://www.jiangjinchao.pro/tags/SPSS/"/>
-    
       <category term="压实度" scheme="http://www.jiangjinchao.pro/tags/%E5%8E%8B%E5%AE%9E%E5%BA%A6/"/>
     
       <category term="工程质量" scheme="http://www.jiangjinchao.pro/tags/%E5%B7%A5%E7%A8%8B%E8%B4%A8%E9%87%8F/"/>
     
       <category term="动态管理" scheme="http://www.jiangjinchao.pro/tags/%E5%8A%A8%E6%80%81%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="SPSS" scheme="http://www.jiangjinchao.pro/tags/SPSS/"/>
     
       <category term="均匀性" scheme="http://www.jiangjinchao.pro/tags/%E5%9D%87%E5%8C%80%E6%80%A7/"/>
     
@@ -590,17 +590,17 @@
     
       <category term="贝雷参数" scheme="http://www.jiangjinchao.pro/tags/%E8%B4%9D%E9%9B%B7%E5%8F%82%E6%95%B0/"/>
     
-      <category term="VMA" scheme="http://www.jiangjinchao.pro/tags/VMA/"/>
-    
-      <category term="模型" scheme="http://www.jiangjinchao.pro/tags/%E6%A8%A1%E5%9E%8B/"/>
-    
-      <category term="SPSS" scheme="http://www.jiangjinchao.pro/tags/SPSS/"/>
-    
       <category term="压实度" scheme="http://www.jiangjinchao.pro/tags/%E5%8E%8B%E5%AE%9E%E5%BA%A6/"/>
     
       <category term="工程质量" scheme="http://www.jiangjinchao.pro/tags/%E5%B7%A5%E7%A8%8B%E8%B4%A8%E9%87%8F/"/>
     
       <category term="动态管理" scheme="http://www.jiangjinchao.pro/tags/%E5%8A%A8%E6%80%81%E7%AE%A1%E7%90%86/"/>
+    
+      <category term="VMA" scheme="http://www.jiangjinchao.pro/tags/VMA/"/>
+    
+      <category term="模型" scheme="http://www.jiangjinchao.pro/tags/%E6%A8%A1%E5%9E%8B/"/>
+    
+      <category term="SPSS" scheme="http://www.jiangjinchao.pro/tags/SPSS/"/>
     
   </entry>
   
