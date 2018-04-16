@@ -17,13 +17,6 @@
 
 
 
-  
-  
-    
-    
-  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link href="/lib/pace/pace-theme-mac-osx.min.css?v=1.0.2" rel="stylesheet">
-
 
 
 
@@ -124,8 +117,8 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
-      apiKey: '',
-      indexName: '',
+      apiKey: '23b0d1025c9abcae05884f61967d2522',
+      indexName: 'jiangjinchao',
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
@@ -161,9 +154,8 @@
 <meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/15227411904451.jpg">
 <meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/屏幕快照 2018-04-03 下午3.44.13.png">
 <meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/15227419249319.jpg">
-<meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/屏幕快照 2018-04-03 下午5.22.21.png">
 <meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/15227475053573.jpg">
-<meta property="og:updated_time" content="2018-04-04T04:20:06.087Z">
+<meta property="og:updated_time" content="2018-04-16T09:37:43.047Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="体积法预估最佳沥青用量在混合料配合比设计中的应用">
 <meta name="twitter:description" content="1出版源-《公路工程》第37卷，第5期，2012年10月 文章编号:1674—0610( 2012) 05—0001—04 内容摘要 本文选取福建路桥建设有限公司从2002年福宁高速公路B2段至2010年永宁高速公路8条高速公路、8个沥青混合料类型及20多个热拌沥青混合料配合比设计中最佳沥青用量的选定进行跟踪与剖析，对热拌沥青混合料配合比设计中如何使用体积法预估沥青用量从理论上做了详细阐述，并经过">
@@ -279,7 +271,7 @@
           
   <li class="menu-item menu-item-home">
     <a href="/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-bank"></i> <br />首页</a>
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
 </li>
 
       
@@ -288,7 +280,7 @@
           
   <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-book"></i> <br />日志<span class="badge">42</span>
+      <i class="menu-item-icon fa fa-fw fa-archives"></i> <br />日志<span class="badge">42</span>
       </a>
 </li>
 
@@ -308,7 +300,7 @@
           
   <li class="menu-item menu-item-categories">
     <a href="/categories/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">21</span>
+      <i class="menu-item-icon fa fa-fw fa-categories"></i> <br />分类<span class="badge">21</span>
       </a>
 </li>
 
@@ -340,22 +332,25 @@
   
     <div class="site-search">
       
-  <div class="popup search-popup local-search-popup">
-  <div class="local-search-header clearfix">
-    <span class="search-icon">
-      <i class="fa fa-search"></i>
-    </span>
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
     <span class="popup-btn-close">
       <i class="fa fa-times-circle"></i>
     </span>
-    <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
-             type="text" id="local-search-input">
-    </div>
   </div>
-  <div id="local-search-result"></div>
-</div>
 
 
 
@@ -504,9 +499,9 @@
 
       
       <span class="post-meta-divider">|</span>
-      <span class="fa fa-file-word-o"> 2,312 </span>
+      <span class="fa fa-file-word-o"> 2,637 </span>
       <span class="post-meta-divider">|</span>
-      <span class="fa fa-clock-o"> 9 min</span>
+      <span class="fa fa-clock-o"> 10 min</span>
 
 
 
@@ -524,14 +519,13 @@
 
       
         <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">出版源-《公路工程》第37卷，第5期，2012年10月 文章编号:1674—0610( 2012) 05—0001—04</span><br></pre></td></tr></table></figure>
-<h3 id="内容摘要"><a href="#内容摘要" class="headerlink" title="内容摘要"></a>内容摘要</h3><blockquote>
+<h2 id="内容摘要"><a href="#内容摘要" class="headerlink" title="内容摘要"></a>内容摘要</h2><blockquote>
 <p>本文选取福建路桥建设有限公司从2002年福宁高速公路B2段至2010年永宁高速公路8条高速公路、8个沥青混合料类型及20多个热拌沥青混合料配合比设计中最佳沥青用量的选定进行跟踪与剖析，对热拌沥青混合料配合比设计中如何使用体积法预估沥青用量从理论上做了详细阐述，并经过京珠复线湖南桂武高速公路路面34合同段superpave-25沥青混合料下面层目标配合比设计进行了的检验，证明该方法是准确可行的。</p>
 </blockquote>
-<p><strong>关键词:</strong>  <code>沥青混合料</code> <code>沥青用量</code> <code>体积法</code></p>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>公路路面工程使用沥青混合料柔性路面，混合料中沥青用量的大小对路用性能有非常大的的影响。当沥青用量过大时易导致成本提高、泛油和车辙，沥青用量过小时易出现耐久性、水损坏和沥青老化等现象，从而降低路面使用寿命提高养护成本。</p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>公路路面工程使用沥青混合料柔性路面，混合料中沥青用量的大小对路用性能有非常大的的影响。当沥青用量过大时易导致成本提高、泛油和车辙，沥青用量过小时易出现耐久性、水损坏和沥青老化等现象，从而降低路面使用寿命提高养护成本。</p>
 <p><img src="http://p5mgr4bgm.bkt.clouddn.com/15227410309064.jpg" alt="图一-w500"></p>
  <a id="more"></a>
-<h3 id="体积参数"><a href="#体积参数" class="headerlink" title="体积参数"></a>体积参数</h3><p>设计沥青混合料配合比时应先确定合理的设计<code>空隙率</code>（或空气体积率）<strong>VV</strong>（%）（即压实沥青混合料中孔隙占沥青混合料总体积的百分率），再通过设计空隙率及矿料的公称最大粒径（mm）确定最小矿料间隙率<strong>VMA</strong>（%）（矿料表面沥青膜厚度的表征）。而压实沥青混合料中的体积由矿料实体+闭口体积<code>①</code>、矿料表面开口空隙未吸收沥青的毛体积<code>②</code>、矿料表面开口空隙吸收沥青的体积<code>③</code>、形成结构沥青的有效沥青体积<code>④</code>和空气体积所组成<code>⑤</code>。</p>
+<h2 id="体积参数"><a href="#体积参数" class="headerlink" title="体积参数"></a>体积参数</h2><p>设计沥青混合料配合比时应先确定合理的设计<code>空隙率</code>（或空气体积率）<strong>VV</strong>（%）（即压实沥青混合料中孔隙占沥青混合料总体积的百分率），再通过设计空隙率及矿料的公称最大粒径（mm）确定最小矿料间隙率<strong>VMA</strong>（%）（矿料表面沥青膜厚度的表征）。而压实沥青混合料中的体积由矿料实体+闭口体积<code>①</code>、矿料表面开口空隙未吸收沥青的毛体积<code>②</code>、矿料表面开口空隙吸收沥青的体积<code>③</code>、形成结构沥青的有效沥青体积<code>④</code>和空气体积所组成<code>⑤</code>。</p>
 <p><img src="http://p5mgr4bgm.bkt.clouddn.com/15227411904451.jpg" alt="图二-w500"></p>
 <p>可以看出理论沥青混合料的配合比设计最佳沥用量，其实，就是满足设计空隙率及最小VMA条件下的矿料表面开口空隙吸收的沥青的体积<code>③</code>+形成结构沥青的有效沥青体积的体积之和<code>④</code>。在单体体积中只须知道<code>③</code>、<code>④</code>的体积再乘以沥青相对密度便能计算出混合料中沥青用量。</p>
 <p>集料毛体积<strong>Vsb</strong>为表面轮廓线范围内的全部毛体积，包含了材料实体、开口及闭口孔隙。沥青混合料中有效体积<strong>Vse</strong>(<em>采用有效相对密度计算</em>)包括材料实体体积与表面空隙没有被沥青填充的体积。因此矿料表面开口空隙吸收沥青的体积<code>③</code><strong>Vba</strong>为<strong>Vsb</strong>-<strong>Vse</strong>之差。形成结构沥青的有效沥青体积<code>④</code><strong>Vbe</strong>为矿料间隙率<strong>VMA</strong>-空隙率<strong>VV</strong>之差。<br>最终单位体积沥青混合料的沥青用量：<br>$$<br>Pb^1 =(Vb_a+Vb_e)* γ_b<br>$$</p>
@@ -607,16 +601,321 @@
 <li>计算沥青用量Pb＇（%）（<em>占混合料总量的百分比</em>）=Mb`/P<em>100=99.7/2396.5</em>100=4.16%</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">最后，还可以计算出沥青混合料试件毛体积相对密度γf=2.396；计算最大理论相对密度Gmm=2.509；饱和度VFA=65.4%等。</span><br></pre></td></tr></table></figure>
-<h3 id="计算沥青用量与最佳沥青用量比较"><a href="#计算沥青用量与最佳沥青用量比较" class="headerlink" title="计算沥青用量与最佳沥青用量比较"></a>计算沥青用量与最佳沥青用量比较</h3><p>沥青配合比设计中通过体积法上述公式可以计算预估沥青用量。同时，笔者通过2002年福宁高速公路B2段至2010年永宁高速公路8条高速公路、8个沥青混合料类型及20个热拌沥青混合料配合比设计中所确定的最佳沥青用量与体积法计算沥青用量进行了比较。如下图：</p>
-<p><img src="http://p5mgr4bgm.bkt.clouddn.com/屏幕快照 2018-04-03 下午5.22.21.png" alt="屏幕快照 2018-04-03 下午5.22.21-w600"></p>
+<h2 id="计算沥青用量与最佳沥青用量比较"><a href="#计算沥青用量与最佳沥青用量比较" class="headerlink" title="计算沥青用量与最佳沥青用量比较"></a>计算沥青用量与最佳沥青用量比较</h2><p>沥青配合比设计中通过体积法上述公式可以计算预估沥青用量。同时，笔者通过2002年福宁高速公路B2段至2010年永宁高速公路8条高速公路、8个沥青混合料类型及20个热拌沥青混合料配合比设计中所确定的最佳沥青用量与体积法计算沥青用量进行了比较。如下图：</p>
+<table>
+<thead>
+<tr>
+<th>路段</th>
+<th>混合料类型</th>
+<th>γsb</th>
+<th>γsa</th>
+<th>γse</th>
+<th>VMA(%)</th>
+<th>(VV)%</th>
+<th>最佳沥青用量(%)</th>
+<th>计算沥青用量(%)</th>
+<th>油量偏差(%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>邵三高速</td>
+<td>ATB-25</td>
+<td>2.638</td>
+<td>2.713</td>
+<td>2.669</td>
+<td>13</td>
+<td>5</td>
+<td>3.8</td>
+<td>3.87</td>
+<td>-0.07</td>
+</tr>
+<tr>
+<td>永宁高速B2</td>
+<td>ATB-25</td>
+<td>2.645</td>
+<td>2.706</td>
+<td>2.668</td>
+<td>13</td>
+<td>5.1</td>
+<td>3.7</td>
+<td>3.7</td>
+<td>0</td>
+</tr>
+<tr>
+<td>龙长高速B4</td>
+<td>ATB-25</td>
+<td>2.638</td>
+<td>2.713</td>
+<td>2.669</td>
+<td>13</td>
+<td>5</td>
+<td>3.8</td>
+<td>3.89</td>
+<td>-0.09</td>
+</tr>
+<tr>
+<td>泉厦高速</td>
+<td>ATB-25</td>
+<td>2.641</td>
+<td>2.683</td>
+<td>2.664</td>
+<td>13.2</td>
+<td>4.8</td>
+<td>3.9</td>
+<td>3.94</td>
+<td>-0.04</td>
+</tr>
+<tr>
+<td>福泉高速</td>
+<td>ATB-25</td>
+<td>2.603</td>
+<td>2.651</td>
+<td>2.628</td>
+<td>13.3</td>
+<td>5.1</td>
+<td>3.9</td>
+<td>3.96</td>
+<td>-0.06</td>
+</tr>
+<tr>
+<td>绕城高速</td>
+<td>ATB-25</td>
+<td>2.644</td>
+<td>2.693</td>
+<td>2.666</td>
+<td>13</td>
+<td>4.7</td>
+<td>3.9</td>
+<td>3.87</td>
+<td>0.03</td>
+</tr>
+<tr>
+<td>邵三高速</td>
+<td>AC-20</td>
+<td>2.622</td>
+<td>2.682</td>
+<td>2.653</td>
+<td>13.9</td>
+<td>4.7</td>
+<td>4.4</td>
+<td>4.45</td>
+<td>-0.05</td>
+</tr>
+<tr>
+<td>泉厦高速</td>
+<td>AC-20</td>
+<td>2.636</td>
+<td>2.684</td>
+<td>2.672</td>
+<td>13.8</td>
+<td>4.6</td>
+<td>4.5</td>
+<td>4.49</td>
+<td>0.01</td>
+</tr>
+<tr>
+<td>福泉高速</td>
+<td>AC-20</td>
+<td>2.597</td>
+<td>2.651</td>
+<td>2.636</td>
+<td>14</td>
+<td>4.8</td>
+<td>4.6</td>
+<td>4.61</td>
+<td>-0.01</td>
+</tr>
+<tr>
+<td>永宁高速B4</td>
+<td>AC-20</td>
+<td>2.65</td>
+<td>2.701</td>
+<td>2.688</td>
+<td>14</td>
+<td>4.6</td>
+<td>4.7</td>
+<td>4.63</td>
+<td>0.07</td>
+</tr>
+<tr>
+<td>京福高速</td>
+<td>AC-20</td>
+<td>2.643</td>
+<td>2.663</td>
+<td>2.646</td>
+<td>13.5</td>
+<td>4.1</td>
+<td>4.2</td>
+<td>4.2</td>
+<td>0</td>
+</tr>
+<tr>
+<td>绕城高速</td>
+<td>AC-20</td>
+<td>2.639</td>
+<td>2.696</td>
+<td>2.68</td>
+<td>13.8</td>
+<td>4.5</td>
+<td>4.6</td>
+<td>4.58</td>
+<td>0.02</td>
+</tr>
+<tr>
+<td>粤赣高速</td>
+<td>AC-20</td>
+<td>2.707</td>
+<td>2.759</td>
+<td>2.746</td>
+<td>13.5</td>
+<td>4.2</td>
+<td>4.4</td>
+<td>4.47</td>
+<td>-0.07</td>
+</tr>
+<tr>
+<td>泉三高SM4</td>
+<td>AC-20</td>
+<td>2.675</td>
+<td>2.725</td>
+<td>2.712</td>
+<td>13.9</td>
+<td>4.7</td>
+<td>4.4</td>
+<td>4.44</td>
+<td>-0.04</td>
+</tr>
+<tr>
+<td>邵三高速</td>
+<td>AC-16</td>
+<td>2.605</td>
+<td>2.668</td>
+<td>2.649</td>
+<td>13.8</td>
+<td>4.5</td>
+<td>4.5</td>
+<td>4.69</td>
+<td>-0.19</td>
+</tr>
+<tr>
+<td>绕城高速</td>
+<td>AC-16</td>
+<td>2.625</td>
+<td>2.683</td>
+<td>2.666</td>
+<td>14.8</td>
+<td>4.4</td>
+<td>5.1</td>
+<td>5.11</td>
+<td>-0.01</td>
+</tr>
+<tr>
+<td>京福高速</td>
+<td>AK-16</td>
+<td>2.862</td>
+<td>2.917</td>
+<td>2.869</td>
+<td>14.8</td>
+<td>4.5</td>
+<td>4.3</td>
+<td>4.24</td>
+<td>0.06</td>
+</tr>
+<tr>
+<td>龙长高速B4</td>
+<td>AC-13</td>
+<td>2.614</td>
+<td>2.667</td>
+<td>2.653</td>
+<td>14.4</td>
+<td>5</td>
+<td>4.7</td>
+<td>4.67</td>
+<td>0.03</td>
+</tr>
+<tr>
+<td>泉三高速SM4</td>
+<td>AC-13</td>
+<td>2.689</td>
+<td>2.744</td>
+<td>2.729</td>
+<td>14.8</td>
+<td>4.8</td>
+<td>4.8</td>
+<td>4.81</td>
+<td>-0.01</td>
+</tr>
+<tr>
+<td>泉厦高速</td>
+<td>SMA-13</td>
+<td>2.65</td>
+<td>2.688</td>
+<td>2.68</td>
+<td>16.5</td>
+<td>3.7</td>
+<td>6</td>
+<td>6.02</td>
+<td>-0.02</td>
+</tr>
+<tr>
+<td>福泉高速</td>
+<td>SMA-13</td>
+<td>2.586</td>
+<td>2.646</td>
+<td>2.628</td>
+<td>16.6</td>
+<td>3.8</td>
+<td>6.2</td>
+<td>6.33</td>
+<td>-0.13</td>
+</tr>
+<tr>
+<td>邵三高速</td>
+<td>AC-25</td>
+<td>2.625</td>
+<td>2.684</td>
+<td>2.667</td>
+<td>13.1</td>
+<td>4.7</td>
+<td>4</td>
+<td>4.22</td>
+<td>-0.22</td>
+</tr>
+<tr>
+<td>京福高速</td>
+<td>AC-25</td>
+<td>2.624</td>
+<td>2.662</td>
+<td>2.63</td>
+<td>13.4</td>
+<td>4.1</td>
+<td>4.1</td>
+<td>4.12</td>
+<td>-0.02</td>
+</tr>
+<tr>
+<td>粤赣高速</td>
+<td>ATB-30</td>
+<td>2.715</td>
+<td>2.76</td>
+<td>2.742</td>
+<td>12.7</td>
+<td>5.4</td>
+<td>3.2</td>
+<td>3.3</td>
+<td>-0.1</td>
+</tr>
+</tbody>
+</table>
 <p>通过图表，我们可以得出体积法计算的沥青用量与混合料类型关系不大，而矿料合成毛体积相对密度及矿料合成表观相对密度对计算预估沥青用量有直接的影响。最大偏差为邵三高速公路（AC-25）体积法计算的沥青用量为4.22%，最佳沥青用量为4.00%，偏差-0.22%。其他配合比总平均偏差为-0.04%。因此，沥青混合料配合比设计中应用体积法预估沥青用量适用大部分热拌沥青混合料配合比设计。由于地区气候的不同对最佳沥青用量的选定存在差异。还须对计算的沥青用量与最佳沥青用量建立数学模型确定回归议程式。</p>
-<h3 id="回归方程式的确立"><a href="#回归方程式的确立" class="headerlink" title="回归方程式的确立"></a>回归方程式的确立</h3><p>对上述数据进行建模（最大二乘法），得出本检测中心使用体积法的经验公式，下表可以看出，本次样本数量为26组，样本均方差：0.4324；回归均方差：10.5331；可决系数：0.9871；F检验值为1836.0182，当显著性水平0.01的F临界值：7.8229，F值检验结论为回归方程线性关系特别显著；T检验值为42.8488，当显著性水平0.01的T临界值2.7969，T值检验结论为回归系数特别显著大于0。所以回归方程特征呈线性关系。</p>
+<h2 id="回归方程式的确立"><a href="#回归方程式的确立" class="headerlink" title="回归方程式的确立"></a>回归方程式的确立</h2><p>对上述数据进行建模（最大二乘法），得出本检测中心使用体积法的经验公式，下表可以看出，本次样本数量为26组，样本均方差：0.4324；回归均方差：10.5331；可决系数：0.9871；F检验值为1836.0182，当显著性水平0.01的F临界值：7.8229，F值检验结论为回归方程线性关系特别显著；T检验值为42.8488，当显著性水平0.01的T临界值2.7969，T值检验结论为回归系数特别显著大于0。所以回归方程特征呈线性关系。</p>
 <p><img src="http://p5mgr4bgm.bkt.clouddn.com/15227475053573.jpg" alt="ss-w300"></p>
 <blockquote>
 <p>最终的经验公式为：Pb=0.996 Pb’-0.0259，Pb’为体积法计算的理论沥青用量，Pb为修正后的预估沥青用量。</p>
 </blockquote>
-<h3 id="检验计算"><a href="#检验计算" class="headerlink" title="检验计算"></a>检验计算</h3><p>笔者通过桂武高速公路路面34合同段superpave-25沥青混合料下面层目标配合比设计对体积法预估沥青用量进行检验,superpave-25沥青混合料下面层目标配合比设计通过委托江苏省交通规划设计院股份有限公司工程质量检测中心进行，依据美国superpave沥青混合设计标准进行设计，并依据我国《公路路面施工技术规范》（JTG F40-2004）的要求进行马歇尔试验验证，在工程设计级配范围内设计供优选用的1~3组不同的矿料级配，最终确定一条设计级配线，其中矿料合成毛体积相对密度γsb=2.663；矿料合成表观相对密γsa=2.706；矿料有效密度γse=2.698。设计空隙率VV=4.0%；最小VMA=12.1%；沥青相对密度γb=1.032。在选定设计级配的基础上，以3.5、4.0%、4.5%和5.0%四种沥青用量进行试验，确定沥青用量3.9%做为最佳沥青用量。</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ol>
+<h2 id="检验计算"><a href="#检验计算" class="headerlink" title="检验计算"></a>检验计算</h2><p>笔者通过桂武高速公路路面34合同段superpave-25沥青混合料下面层目标配合比设计对体积法预估沥青用量进行检验,superpave-25沥青混合料下面层目标配合比设计通过委托江苏省交通规划设计院股份有限公司工程质量检测中心进行，依据美国superpave沥青混合设计标准进行设计，并依据我国《公路路面施工技术规范》（JTG F40-2004）的要求进行马歇尔试验验证，在工程设计级配范围内设计供优选用的1~3组不同的矿料级配，最终确定一条设计级配线，其中矿料合成毛体积相对密度γsb=2.663；矿料合成表观相对密γsa=2.706；矿料有效密度γse=2.698。设计空隙率VV=4.0%；最小VMA=12.1%；沥青相对密度γb=1.032。在选定设计级配的基础上，以3.5、4.0%、4.5%和5.0%四种沥青用量进行试验，确定沥青用量3.9%做为最佳沥青用量。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol>
 <li>用体积法计算出预估沥青用量通过修正后的预估沥青用量与最佳沥青相近，准确性较高；避免了以往经验或已建类似工程所带来的误差。</li>
 <li>体积法计算出的参数，可以做为试验人员配合比设计初的参考值，当试验出来结果与理论计算的结果相差较大时，应找出原因使配合比设计过程当中能进行方面参考。</li>
 <li>矿料合成毛体积相对密度及合成相对表观密度对计算预估沥青用量有直接的影响，应提高集料密度试验的准确性。</li>
@@ -696,8 +995,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2010/VBA调用‘规划求解’自动合成矿料级配.html" rel="next" title="VBA调用‘规划求解’自动合成矿料级配">
-                <i class="fa fa-chevron-left"></i> VBA调用‘规划求解’自动合成矿料级配
+              <a href="/2010/Excel绘制泰勒曲线级配图.html" rel="next" title="Excel绘制泰勒曲线级配图">
+                <i class="fa fa-chevron-left"></i> Excel绘制泰勒曲线级配图
               </a>
             
           </div>
@@ -1148,7 +1447,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#内容摘要"><span class="nav-number">1.</span> <span class="nav-text">内容摘要</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">2.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#体积参数"><span class="nav-number">3.</span> <span class="nav-text">体积参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例计算"><span class="nav-number">4.</span> <span class="nav-text">实例计算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#计算沥青用量与最佳沥青用量比较"><span class="nav-number">5.</span> <span class="nav-text">计算沥青用量与最佳沥青用量比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#回归方程式的确立"><span class="nav-number">6.</span> <span class="nav-text">回归方程式的确立</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#检验计算"><span class="nav-number">7.</span> <span class="nav-text">检验计算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">8.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#内容摘要"><span class="nav-number">1.</span> <span class="nav-text">内容摘要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">2.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#体积参数"><span class="nav-number">3.</span> <span class="nav-text">体积参数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实例计算"><span class="nav-number">3.1.</span> <span class="nav-text">实例计算</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#计算沥青用量与最佳沥青用量比较"><span class="nav-number">4.</span> <span class="nav-text">计算沥青用量与最佳沥青用量比较</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#回归方程式的确立"><span class="nav-number">5.</span> <span class="nav-text">回归方程式的确立</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#检验计算"><span class="nav-number">6.</span> <span class="nav-text">检验计算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">7.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
@@ -1189,7 +1488,7 @@
 
 
 <span class="post-meta-divider">|</span>
-<span class="fa fa-area-chart">71.6k</span>
+<span class="fa fa-area-chart">72.1k</span>
 <span class="post-meta-divider">|</span>
 <i class="fa fa-coffee"></i> 12:06</span>
 
@@ -1202,7 +1501,7 @@
 
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.0</div>
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
 
 
 
@@ -1380,327 +1679,20 @@
 
   
 
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    var isXml = true;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length === 0) {
-      search_path = "search.xml";
-    } else if (/json$/i.test(search_path)) {
-      isXml = false;
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
-
-    var onPopupClose = function (e) {
-      $('.popup').hide();
-      $('#local-search-input').val('');
-      $('.search-result-list').remove();
-      $('#no-result').remove();
-      $(".local-search-pop-overlay").remove();
-      $('body').css('overflow', '');
-    }
-
-    function proceedsearch() {
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
-        .css('overflow', 'hidden');
-      $('.search-popup-overlay').click(onPopupClose);
-      $('.popup').toggle();
-      var $localSearchInput = $('#local-search-input');
-      $localSearchInput.attr("autocapitalize", "none");
-      $localSearchInput.attr("autocorrect", "off");
-      $localSearchInput.focus();
-    }
-
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-      'use strict';
-
-      // start loading animation
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
-          '<div id="search-loading-icon">' +
-          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
-          '</div>' +
-          '</div>')
-        .css('overflow', 'hidden');
-      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
-
-      
-
-      $.ajax({
-        url: path,
-        dataType: isXml ? "xml" : "json",
-        async: true,
-        success: function(res) {
-          // get the contents from search data
-          isfetched = true;
-          $('.popup').detach().appendTo('.header-inner');
-          var datas = isXml ? $("entry", res).map(function() {
-            return {
-              title: $("title", this).text(),
-              content: $("content",this).text(),
-              url: $("url" , this).text()
-            };
-          }).get() : res;
-          var input = document.getElementById(search_id);
-          var resultContent = document.getElementById(content_id);
-          var inputEventFunction = function() {
-            var searchText = input.value.trim().toLowerCase();
-            var keywords = searchText.split(/[\s\-]+/);
-            if (keywords.length > 1) {
-              keywords.push(searchText);
-            }
-            var resultItems = [];
-            if (searchText.length > 0) {
-              // perform local searching
-              datas.forEach(function(data) {
-                var isMatch = false;
-                var hitCount = 0;
-                var searchTextCount = 0;
-                var title = data.title.trim();
-                var titleInLowerCase = title.toLowerCase();
-                var content = data.content.trim().replace(/<[^>]+>/g,"");
-                
-                var contentInLowerCase = content.toLowerCase();
-                var articleUrl = decodeURIComponent(data.url);
-                var indexOfTitle = [];
-                var indexOfContent = [];
-                // only match articles with not empty titles
-                if(title != '') {
-                  keywords.forEach(function(keyword) {
-                    function getIndexByWord(word, text, caseSensitive) {
-                      var wordLen = word.length;
-                      if (wordLen === 0) {
-                        return [];
-                      }
-                      var startPosition = 0, position = [], index = [];
-                      if (!caseSensitive) {
-                        text = text.toLowerCase();
-                        word = word.toLowerCase();
-                      }
-                      while ((position = text.indexOf(word, startPosition)) > -1) {
-                        index.push({position: position, word: word});
-                        startPosition = position + wordLen;
-                      }
-                      return index;
-                    }
-
-                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
-                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
-                  });
-                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
-                    isMatch = true;
-                    hitCount = indexOfTitle.length + indexOfContent.length;
-                  }
-                }
-
-                // show search results
-
-                if (isMatch) {
-                  // sort index by position of keyword
-
-                  [indexOfTitle, indexOfContent].forEach(function (index) {
-                    index.sort(function (itemLeft, itemRight) {
-                      if (itemRight.position !== itemLeft.position) {
-                        return itemRight.position - itemLeft.position;
-                      } else {
-                        return itemLeft.word.length - itemRight.word.length;
-                      }
-                    });
-                  });
-
-                  // merge hits into slices
-
-                  function mergeIntoSlice(text, start, end, index) {
-                    var item = index[index.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    var hits = [];
-                    var searchTextCountInSlice = 0;
-                    while (position + word.length <= end && index.length != 0) {
-                      if (word === searchText) {
-                        searchTextCountInSlice++;
-                      }
-                      hits.push({position: position, length: word.length});
-                      var wordEnd = position + word.length;
-
-                      // move to next position of hit
-
-                      index.pop();
-                      while (index.length != 0) {
-                        item = index[index.length - 1];
-                        position = item.position;
-                        word = item.word;
-                        if (wordEnd > position) {
-                          index.pop();
-                        } else {
-                          break;
-                        }
-                      }
-                    }
-                    searchTextCount += searchTextCountInSlice;
-                    return {
-                      hits: hits,
-                      start: start,
-                      end: end,
-                      searchTextCount: searchTextCountInSlice
-                    };
-                  }
-
-                  var slicesOfTitle = [];
-                  if (indexOfTitle.length != 0) {
-                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
-                  }
-
-                  var slicesOfContent = [];
-                  while (indexOfContent.length != 0) {
-                    var item = indexOfContent[indexOfContent.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    // cut out 100 characters
-                    var start = position - 20;
-                    var end = position + 80;
-                    if(start < 0){
-                      start = 0;
-                    }
-                    if (end < position + word.length) {
-                      end = position + word.length;
-                    }
-                    if(end > content.length){
-                      end = content.length;
-                    }
-                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
-                  }
-
-                  // sort slices in content by search text's count and hits' count
-
-                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
-                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
-                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
-                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
-                      return sliceRight.hits.length - sliceLeft.hits.length;
-                    } else {
-                      return sliceLeft.start - sliceRight.start;
-                    }
-                  });
-
-                  // select top N slices in content
-
-                  var upperBound = parseInt('1');
-                  if (upperBound >= 0) {
-                    slicesOfContent = slicesOfContent.slice(0, upperBound);
-                  }
-
-                  // highlight title and content
-
-                  function highlightKeyword(text, slice) {
-                    var result = '';
-                    var prevEnd = slice.start;
-                    slice.hits.forEach(function (hit) {
-                      result += text.substring(prevEnd, hit.position);
-                      var end = hit.position + hit.length;
-                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
-                      prevEnd = end;
-                    });
-                    result += text.substring(prevEnd, slice.end);
-                    return result;
-                  }
-
-                  var resultItem = '';
-
-                  if (slicesOfTitle.length != 0) {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
-                  } else {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
-                  }
-
-                  slicesOfContent.forEach(function (slice) {
-                    resultItem += "<a href='" + articleUrl + "'>" +
-                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
-                      "...</p>" + "</a>";
-                  });
-
-                  resultItem += "</li>";
-                  resultItems.push({
-                    item: resultItem,
-                    searchTextCount: searchTextCount,
-                    hitCount: hitCount,
-                    id: resultItems.length
-                  });
-                }
-              })
-            };
-            if (keywords.length === 1 && keywords[0] === "") {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
-            } else if (resultItems.length === 0) {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
-            } else {
-              resultItems.sort(function (resultLeft, resultRight) {
-                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
-                  return resultRight.searchTextCount - resultLeft.searchTextCount;
-                } else if (resultLeft.hitCount !== resultRight.hitCount) {
-                  return resultRight.hitCount - resultLeft.hitCount;
-                } else {
-                  return resultRight.id - resultLeft.id;
-                }
-              });
-              var searchResultList = '<ul class=\"search-result-list\">';
-              resultItems.forEach(function (result) {
-                searchResultList += result.item;
-              })
-              searchResultList += "</ul>";
-              resultContent.innerHTML = searchResultList;
-            }
-          }
-
-          if ('auto' === 'auto') {
-            input.addEventListener('input', inputEventFunction);
-          } else {
-            $('.search-icon').click(inputEventFunction);
-            input.addEventListener('keypress', function (event) {
-              if (event.keyCode === 13) {
-                inputEventFunction();
-              }
-            });
-          }
-
-          // remove loading animation
-          $(".local-search-pop-overlay").remove();
-          $('body').css('overflow', '');
-
-          proceedsearch();
-        }
-      });
-    }
-
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched === false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-    });
-
-    $('.popup-btn-close').click(onPopupClose);
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-    $(document).on('keyup', function (event) {
-      var shouldDismissSearchPopup = event.which === 27 &&
-        $('.search-popup').is(':visible');
-      if (shouldDismissSearchPopup) {
-        onPopupClose();
-      }
-    });
-  </script>
 
 
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=6.1.0"></script>
 
 
 
