@@ -14,6 +14,10 @@
 
 
 
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
 
 
 
@@ -287,7 +291,7 @@
           
   <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archives"></i> <br />日志<span class="badge">42</span>
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />日志<span class="badge">42</span>
       </a>
 </li>
 
@@ -307,7 +311,7 @@
           
   <li class="menu-item menu-item-categories">
     <a href="/categories/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-categories"></i> <br />分类<span class="badge">21</span>
+      <i class="menu-item-icon fa fa-fw fa-server"></i> <br />分类<span class="badge">21</span>
       </a>
 </li>
 
@@ -659,6 +663,21 @@
       
 
       
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
       
       
 
@@ -1161,7 +1180,7 @@
 <span class="post-meta-divider">|</span>
 <span class="fa fa-area-chart">72.1k</span>
 <span class="post-meta-divider">|</span>
-<i class="fa fa-coffee"></i> 12:06</span>
+<i class="fa fa-flask"></i> 120979</span>
 
 
 
@@ -1188,7 +1207,7 @@
 
 
 <span class="post-meta-divider">|</span>
-<span class="fa fa-skyatlas">图床-<a href="https://www.qiniu.com">七牛云</a></span>
+<span class="fa fa-coffee">图床-<a href="https://www.qiniu.com">七牛云</a></span>
 
 
 
@@ -1400,6 +1419,19 @@
       $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
 
       
+        // ref: https://github.com/ForbesLindesay/unescape-html
+        var unescapeHtml = function(html) {
+          return String(html)
+            .replace(/&quot;/g, '"')
+            .replace(/&#39;/g, '\'')
+            .replace(/&#x3A;/g, ':')
+            // replace all the other &#x; chars
+            .replace(/&#(\d+);/g, function (m, p) { return String.fromCharCode(p); })
+            .replace(/&lt;/g, '<')
+            .replace(/&gt;/g, '>')
+            .replace(/&amp;/g, '&');
+        };
+      
 
       $.ajax({
         url: path,
@@ -1434,6 +1466,8 @@
                 var title = data.title.trim();
                 var titleInLowerCase = title.toLowerCase();
                 var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                content = unescapeHtml(content);
                 
                 var contentInLowerCase = content.toLowerCase();
                 var articleUrl = decodeURIComponent(data.url);
@@ -1705,6 +1739,27 @@
 
 
   
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+  </script>
+
   
 
   
