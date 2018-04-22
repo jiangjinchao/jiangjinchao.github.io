@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.jiangjinchao.pro/"/>
-  <updated>2018-04-15T22:56:17.174Z</updated>
+  <updated>2018-04-17T14:08:16.410Z</updated>
   <id>http://www.jiangjinchao.pro/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://www.jiangjinchao.pro//2018/hello-world.html"/>
     <id>http://www.jiangjinchao.pro//2018/hello-world.html</id>
     <published>2018-04-15T22:56:17.174Z</published>
-    <updated>2018-04-15T22:56:17.174Z</updated>
+    <updated>2018-04-17T14:08:16.410Z</updated>
     
     <summary type="html">
     
@@ -272,38 +272,6 @@
   </entry>
   
   <entry>
-    <title>如何使用 babel</title>
-    <link href="http://www.jiangjinchao.pro//2018/how-to-use-babel.html"/>
-    <id>http://www.jiangjinchao.pro//2018/how-to-use-babel.html</id>
-    <published>2018-03-30T00:50:23.543Z</published>
-    <updated>2018-04-04T06:40:53.208Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://babeljs.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Babel&lt;/a&gt; 用于将 ES6 的代码转化为 ES5，使得 ES6 可以在目前的浏览器环境下使用。学习使用 babel 是为了使用 ES2015 做准备。本文将介绍如何使用 babel，以及一些相关的配置。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://babeljs.io/images/logo.svg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;学习 Babel 可以通过其手册 Babel handbook。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/thejameskyle/babel-handbook&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;babel-handbook&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;其中包含多语言版本，分为&lt;a href=&quot;https://github.com/thejameskyle/babel-handbook/blob/master/translations/zh-Hans/user-handbook.md&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;用户手册&lt;/a&gt;和&lt;a href=&quot;https://github.com/thejameskyle/babel-handbook/blob/master/translations/zh-Hans/plugin-handbook.md&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;插件手册&lt;/a&gt;。这是一个很好的学习 Babel 的资料。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="JavaScript" scheme="http://www.jiangjinchao.pro/categories/JavaScript/"/>
-    
-    
-      <category term="ES2015" scheme="http://www.jiangjinchao.pro/tags/ES2015/"/>
-    
-      <category term="ES6" scheme="http://www.jiangjinchao.pro/tags/ES6/"/>
-    
-      <category term="ES5" scheme="http://www.jiangjinchao.pro/tags/ES5/"/>
-    
-      <category term="babel" scheme="http://www.jiangjinchao.pro/tags/babel/"/>
-    
-  </entry>
-  
-  <entry>
     <title>JavaScript 语言精粹笔记2-方法、毒瘤等</title>
     <link href="http://www.jiangjinchao.pro//2018/JavaScript-good-parts-note2.html"/>
     <id>http://www.jiangjinchao.pro//2018/JavaScript-good-parts-note2.html</id>
@@ -334,6 +302,38 @@
       <category term="JavaScript" scheme="http://www.jiangjinchao.pro/tags/JavaScript/"/>
     
       <category term="函数" scheme="http://www.jiangjinchao.pro/tags/%E5%87%BD%E6%95%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何使用 babel</title>
+    <link href="http://www.jiangjinchao.pro//2018/how-to-use-babel.html"/>
+    <id>http://www.jiangjinchao.pro//2018/how-to-use-babel.html</id>
+    <published>2018-03-30T00:50:23.543Z</published>
+    <updated>2018-04-04T06:40:53.208Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://babeljs.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Babel&lt;/a&gt; 用于将 ES6 的代码转化为 ES5，使得 ES6 可以在目前的浏览器环境下使用。学习使用 babel 是为了使用 ES2015 做准备。本文将介绍如何使用 babel，以及一些相关的配置。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://babeljs.io/images/logo.svg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;学习 Babel 可以通过其手册 Babel handbook。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/thejameskyle/babel-handbook&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;babel-handbook&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;其中包含多语言版本，分为&lt;a href=&quot;https://github.com/thejameskyle/babel-handbook/blob/master/translations/zh-Hans/user-handbook.md&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;用户手册&lt;/a&gt;和&lt;a href=&quot;https://github.com/thejameskyle/babel-handbook/blob/master/translations/zh-Hans/plugin-handbook.md&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;插件手册&lt;/a&gt;。这是一个很好的学习 Babel 的资料。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="http://www.jiangjinchao.pro/categories/JavaScript/"/>
+    
+    
+      <category term="ES2015" scheme="http://www.jiangjinchao.pro/tags/ES2015/"/>
+    
+      <category term="ES6" scheme="http://www.jiangjinchao.pro/tags/ES6/"/>
+    
+      <category term="ES5" scheme="http://www.jiangjinchao.pro/tags/ES5/"/>
+    
+      <category term="babel" scheme="http://www.jiangjinchao.pro/tags/babel/"/>
     
   </entry>
   
