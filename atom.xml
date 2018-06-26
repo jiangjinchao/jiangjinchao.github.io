@@ -360,13 +360,13 @@
     
       <category term="面向对象" scheme="http://www.jiangjinchao.pro/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
     
-      <category term="闭包" scheme="http://www.jiangjinchao.pro/tags/%E9%97%AD%E5%8C%85/"/>
-    
       <category term="函数" scheme="http://www.jiangjinchao.pro/tags/%E5%87%BD%E6%95%B0/"/>
     
       <category term="对象" scheme="http://www.jiangjinchao.pro/tags/%E5%AF%B9%E8%B1%A1/"/>
     
       <category term="this" scheme="http://www.jiangjinchao.pro/tags/this/"/>
+    
+      <category term="闭包" scheme="http://www.jiangjinchao.pro/tags/%E9%97%AD%E5%8C%85/"/>
     
       <category term="作用域" scheme="http://www.jiangjinchao.pro/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
     
