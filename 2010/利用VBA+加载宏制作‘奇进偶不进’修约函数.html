@@ -17,18 +17,18 @@
 <meta property="og:site_name" content="JinChao&#39;s Notes">
 <meta property="og:description" content="前言以前就有不少朋友问我试验上经常用到的奇进偶不进在Excel中怎么处理，方法比较多。常见就是在单元格中直接编写判断语句（IF). 函数如下： 或">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c857d40861d&690.jpeg">
-<meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c857fa9d198&690.jpeg">
-<meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c8533442412&690.jpeg">
-<meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c85b9ddf02b&690.jpeg">
-<meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c85cf6f0de7&690.jpeg">
-<meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c85e40d578b&690.jpeg">
-<meta property="og:image" content="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c85f7eb9fe8&690.jpeg">
-<meta property="og:updated_time" content="2018-04-03T15:40:58.415Z">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNc79gy1g2dnv8l23tj30yc05wmyb.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNc79gy1g2dnv92r8tj30ym04sjt0.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNc79gy1g2dnva6wiqj30yy0hq40r.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNc79gy1g2dnvbquhmj30ys0pctdl.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNc79gy1g2dnvcl20rj30y60ccacc.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNc79gy1g2dnveb19sj30yk0lktbd.jpg">
+<meta property="og:image" content="https://ws4.sinaimg.cn/large/006tNc79gy1g2dnz19zzej30mg0qaacv.jpg">
+<meta property="og:updated_time" content="2019-04-24T05:35:27.562Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用VBA+加载宏制作‘奇进偶不进’修约函数">
 <meta name="twitter:description" content="前言以前就有不少朋友问我试验上经常用到的奇进偶不进在Excel中怎么处理，方法比较多。常见就是在单元格中直接编写判断语句（IF). 函数如下： 或">
-<meta name="twitter:image" content="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c857d40861d&690.jpeg">
+<meta name="twitter:image" content="https://ws4.sinaimg.cn/large/006tNc79gy1g2dnv8l23tj30yc05wmyb.jpg">
     
 
     
@@ -500,7 +500,7 @@
         
             <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>以前就有不少朋友问我试验上经常用到的奇进偶不进在Excel中怎么处理，方法比较多。常见就是在单元格中直接编写判断语句（IF).</p>
 <p>函数如下：</p>
-<p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c857d40861d&amp;690.jpeg" alt="5fe99087h8c857d40861d_690"><br>或<br><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c857fa9d198&amp;690.jpeg" alt="5fe99087h8c857fa9d198_690"></p>
+<p><img src="https://ws4.sinaimg.cn/large/006tNc79gy1g2dnv8l23tj30yc05wmyb.jpg" alt="5fe99087h8c857d40861d_690"><br>或<br><img src="https://ws1.sinaimg.cn/large/006tNc79gy1g2dnv92r8tj30ym04sjt0.jpg" alt="5fe99087h8c857fa9d198_690"></p>
  <a id="more"></a>
 <p><strong>但以上代码有几个缺点：</strong></p>
 <ol>
@@ -512,7 +512,7 @@
 </li>
 </ol>
 <p>今天花点时间写个，像<code>sum</code>,<code>abs</code>，<code>round</code>等函数一样调用简单方便而且各个报表都能通用，参数修改方便不易出错。如图：</p>
-<p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c8533442412&amp;690.jpeg" alt="5fe99087h8c8533442412_690"></p>
+<p><img src="https://ws4.sinaimg.cn/large/006tNc79gy1g2dnva6wiqj30yy0hq40r.jpg" alt="5fe99087h8c8533442412_690"></p>
 <p>首先了解下加载宏.加载宏可以扩展EXCEL的功能，将代码写在加载宏中和写在普通的工作簿中相比，有如下优点：</p>
 <ul>
 <li>加载宏对所有打开的EXCEL文件都生效。普通工作簿的代码一般只在特定的工作簿中才生效。</li>
@@ -522,14 +522,14 @@
 <p>加载宏函数似乎是制作加载宏中最简单的，通常它只需要在模块中写一段Function代码，它就会和EXCEL自身的函数一样使用，并且出现在“插入函数”对话框的列表中。因此今天我们就用Function来实现上述功能。</p>
 <h2 id="编写代码"><a href="#编写代码" class="headerlink" title="编写代码"></a>编写代码</h2><p>在VBA代码编辑窗口中，点击菜单命令“插入→模块”，得到“模块1”编辑窗口， 在其中输入如下自定义函数的代码，如图所示。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Function</span> Mround(ByVal X As Double, Optional ByVal Factor As Double = <span class="number">1</span>) As Double</span><br><span class="line">Dim Temp As Double, FixTemp As Double</span><br><span class="line"></span><br><span class="line"><span class="string">'X 要修约的数</span></span><br><span class="line"><span class="string">'</span>Factor 保留小数位数(如:<span class="number">1000</span>，<span class="number">100</span>，<span class="number">10</span>，<span class="number">1</span>，<span class="number">0.1</span>,<span class="number">0.01</span>)</span><br><span class="line">If (Factor &gt; <span class="number">1</span> And Factor Mod <span class="number">10</span> &lt;&gt; <span class="number">0</span>) Or (Factor &lt; <span class="number">1</span> And <span class="number">1</span> / Factor Mod <span class="number">10</span> &lt;&gt; <span class="number">0</span>) Then Factor = Application.InputBox(Prompt:=<span class="string">"输入正确的参数（如:100，10，1，0.1,0.01）："</span>, <span class="attr">Type</span>:=<span class="number">1</span>)</span><br><span class="line">If Factor &lt;&gt; <span class="number">0</span> Then</span><br><span class="line">    Factor = <span class="number">1</span> / Factor</span><br><span class="line">    Temp = X * Factor</span><br><span class="line">    FixTemp = Fix(Temp + <span class="number">0.5</span> * Sgn(X))</span><br><span class="line">        If Temp - Int(Temp) = <span class="number">0.5</span> Then</span><br><span class="line">            If FixTemp / <span class="number">2</span> &lt;&gt; Int(FixTemp / <span class="number">2</span>) Then</span><br><span class="line">            FixTemp = FixTemp - Sgn(X)</span><br><span class="line">            End If</span><br><span class="line">        End If</span><br><span class="line">    Mround = FixTemp / Factor</span><br><span class="line">Else</span><br><span class="line">    Mround = X</span><br><span class="line">End If</span><br><span class="line">End <span class="built_in">Function</span></span><br></pre></td></tr></table></figure>
-<p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c85b9ddf02b&amp;690.jpeg" alt="5fe99087h8c85b9ddf02b_690"></p>
+<p><img src="https://ws3.sinaimg.cn/large/006tNc79gy1g2dnvbquhmj30ys0pctdl.jpg" alt="5fe99087h8c85b9ddf02b_690"></p>
 <p>完成后，选择菜单中[<code>文件</code>]→[<code>关闭并返回到Microsoft Excel</code>]命令，返回到Excel工作表窗口。</p>
 <p>现在，在E1单元格输入公式“=Mround(D1,0.1)”，回车后就可以看到结果了。拖动E1单元格的填充句柄向下复制公式，则可以轻松地得到所需要的结果，如图所示。</p>
-<p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c85cf6f0de7&amp;690.jpeg" alt="5fe99087h8c85cf6f0de7_690"></p>
+<p><img src="https://ws4.sinaimg.cn/large/006tNc79gy1g2dnvcl20rj30y60ccacc.jpg" alt="5fe99087h8c85cf6f0de7_690"></p>
 <h2 id="Excel中加载宏"><a href="#Excel中加载宏" class="headerlink" title="Excel中加载宏"></a>Excel中加载宏</h2><p>函数“Mround”是我们自定义的函数，它可以象Excel本身自带的函数一样使用。但是在默认的情况下它只能在当前工作薄使用。如果我们需要经常在其它工作薄中使用该函数，则点击“Office按钮”，在弹出的菜单中点击“另存为→其它格式”命令，打开“另存为”对话框，在“保存类型”下拉列表中选择“Excel加载宏”，然后输入一个文件名，如“Mround”，如图所示。单击“确定”后文件就被保存为加载宏。</p>
-<p> <img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c85e40d578b&amp;690.jpeg" alt="5fe99087h8c85e40d578b_690"></p>
+<p> <img src="https://ws1.sinaimg.cn/large/006tNc79gy1g2dnveb19sj30yk0lktbd.jpg" alt="5fe99087h8c85e40d578b_690"></p>
 <p>再点击“Office按钮”，点击右下角的“Excel选项”按钮，打开“Excel选项”对话框，点击左侧的“加载项”项目，然后右侧“管理”下拉列表中选择“Excel加载项”，单击其右侧的“转到”按钮。打开“加载宏”对话框，勾选“可用加载宏”列表框中的“Mround”复选框，如下图所示，单击“确定”按钮后，就可以在本机上的所有工作薄中使用该自定义函数了。</p>
-<p><img src="http://p5mgr4bgm.bkt.clouddn.com/5fe99087h8c85f7eb9fe8&amp;690.jpeg" alt="5fe99087h8c85f7eb9fe8_690"></p>
+<p><img src="https://ws4.sinaimg.cn/large/006tNc79gy1g2dnz19zzej30mg0qaacv.jpg" alt="5fe99087h8c85f7eb9fe8_690"></p>
 <p>如果您在这个对话框中看不到“Mround”复选项，可以点击“浏览”按钮查找。我们所保存的“Mround”加载宏会保存在“C:\Documents and Settings\用户名\Application Data\Microsoft\AddIns”文件夹中。如果我们想在其它的机器中使用此自定义函数，那么也需要将加载宏文件保存到其它机器中相应的文件夹中。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[Mround]函数说明：</span><br><span class="line"></span><br><span class="line">格式： Mround(ByVal X As Double, Optional ByVal Factor As Double = 1)，X：修约的数字；Factor：修约参数(如:1000，100，10，1，0.1,0.01)。如果Factor输入错误会影响修约结果，所以我加了一个提示框。</span><br></pre></td></tr></table></figure>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>从上面我们可以举一反三，可以编写击实试验得出的结果求最大干密度与最佳含水量,沥青针入度的结果判定等试验参数。如果想自己写的函数不被别人随意修改，可以进行封装成DLL文件。</p>
