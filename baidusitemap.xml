@@ -232,9 +232,9 @@
          
         <tag>慕课网</tag>
          
-        <tag>算法</tag>
-         
         <tag>Array</tag>
+         
+        <tag>算法</tag>
          
          
            
@@ -532,8 +532,6 @@
         <title>JavaScript 语言精粹笔记1-语法、对象、函数</title>
         <pubTime>2018-03-30T00:50:23.541Z</pubTime>
         
-        <tag>闭包</tag>
-         
         <tag>面向对象</tag>
          
         <tag>函数</tag>
@@ -541,6 +539,8 @@
         <tag>对象</tag>
          
         <tag>this</tag>
+         
+        <tag>闭包</tag>
          
         <tag>作用域</tag>
          
@@ -774,11 +774,11 @@
         
         <tag>JavaScript</tag>
          
+        <tag>面向对象</tag>
+         
         <tag>慕课网</tag>
          
         <tag>ife</tag>
-         
-        <tag>面向对象</tag>
          
          
            
@@ -800,11 +800,11 @@
         
         <tag>JavaScript</tag>
          
-        <tag>闭包</tag>
-         
         <tag>慕课网</tag>
          
         <tag>ife</tag>
+         
+        <tag>闭包</tag>
          
          
            
