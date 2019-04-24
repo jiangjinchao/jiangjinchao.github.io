@@ -360,13 +360,13 @@
     
       <category term="闭包" scheme="http://www.jiangjinchao.pro/tags/%E9%97%AD%E5%8C%85/"/>
     
-      <category term="面向对象" scheme="http://www.jiangjinchao.pro/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
-    
       <category term="函数" scheme="http://www.jiangjinchao.pro/tags/%E5%87%BD%E6%95%B0/"/>
     
-      <category term="对象" scheme="http://www.jiangjinchao.pro/tags/%E5%AF%B9%E8%B1%A1/"/>
+      <category term="面向对象" scheme="http://www.jiangjinchao.pro/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
     
       <category term="this" scheme="http://www.jiangjinchao.pro/tags/this/"/>
+    
+      <category term="对象" scheme="http://www.jiangjinchao.pro/tags/%E5%AF%B9%E8%B1%A1/"/>
     
       <category term="作用域" scheme="http://www.jiangjinchao.pro/tags/%E4%BD%9C%E7%94%A8%E5%9F%9F/"/>
     
@@ -464,7 +464,7 @@
     <link href="http://www.jiangjinchao.pro//2016/%E8%B4%9D%E9%9B%B7%E5%8F%82%E6%95%B0%E4%B8%8E%E5%9D%87%E5%8C%80%E6%80%A7%E5%9C%A8%E6%B2%A5%E9%9D%92%E8%B7%AF%E9%9D%A2%E6%96%BD%E5%B7%A5%E8%B4%A8%E9%87%8F%E8%BF%87%E7%A8%8B%E6%8E%A7%E5%88%B6%E4%B8%AD%E5%BA%94%E7%94%A8.html"/>
     <id>http://www.jiangjinchao.pro//2016/贝雷参数与均匀性在沥青路面施工质量过程控制中应用.html</id>
     <published>2016-12-04T16:00:00.000Z</published>
-    <updated>2018-04-15T13:58:46.296Z</updated>
+    <updated>2019-04-24T03:15:12.338Z</updated>
     
     <summary type="html">
     
@@ -502,7 +502,7 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;通过表1可以看出技术规范对级配的控制要求并不是很高，级配只要在允许偏差范围内均属合格，在生产过程中无明显指导意义，以此同时施工生产过程中部分检测人员因缺乏经验，无法对级配数据结果进行有效分析。例如，在图1中1号与2号级配均在上下限范围内，能够符合技术规范允许偏差要求，除此之外无法体现更多信息，但实际过程中两条级配线的施工效果完全不一样。1号线配线骨架嵌挤效果差，细集料填充不够，沥青混合料空隙率（VV）与矿料间隙率（VMA）偏大；2号级配线容易离析，高温稳定性与水稳定均差。因此我们应该考虑施工过程中如何对级配进行精细化控制，笔者想通过引入贝雷参数与级配均匀性对生产过程的级配进行检验分析，希望能抛砖引玉给大家提供一些新思路。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://p5mgr4bgm.bkt.clouddn.com/屏幕快照 2018-04-06 下午3.28.50.png&quot; alt=&quot;屏幕快照 2018-04-06 下午3.28.50-w600&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/006tNc79gy1g2dj0m699gj30so0jumyd.jpg&quot; alt=&quot;屏幕快照 2018-04-06 下午3.28.50-w600&quot;&gt;&lt;/p&gt;
     
     </summary>
     
@@ -525,9 +525,9 @@
     
       <category term="动态管理" scheme="http://www.jiangjinchao.pro/tags/%E5%8A%A8%E6%80%81%E7%AE%A1%E7%90%86/"/>
     
-      <category term="SPSS" scheme="http://www.jiangjinchao.pro/tags/SPSS/"/>
-    
       <category term="均匀性" scheme="http://www.jiangjinchao.pro/tags/%E5%9D%87%E5%8C%80%E6%80%A7/"/>
+    
+      <category term="SPSS" scheme="http://www.jiangjinchao.pro/tags/SPSS/"/>
     
   </entry>
   
@@ -596,11 +596,11 @@
     
       <category term="动态管理" scheme="http://www.jiangjinchao.pro/tags/%E5%8A%A8%E6%80%81%E7%AE%A1%E7%90%86/"/>
     
+      <category term="SPSS" scheme="http://www.jiangjinchao.pro/tags/SPSS/"/>
+    
       <category term="VMA" scheme="http://www.jiangjinchao.pro/tags/VMA/"/>
     
       <category term="模型" scheme="http://www.jiangjinchao.pro/tags/%E6%A8%A1%E5%9E%8B/"/>
-    
-      <category term="SPSS" scheme="http://www.jiangjinchao.pro/tags/SPSS/"/>
     
   </entry>
   
