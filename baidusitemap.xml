@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://www.jiangjinchao.pro//2016/%E8%B4%9D%E9%9B%B7%E5%8F%82%E6%95%B0%E4%B8%8E%E5%9D%87%E5%8C%80%E6%80%A7%E5%9C%A8%E6%B2%A5%E9%9D%92%E8%B7%AF%E9%9D%A2%E6%96%BD%E5%B7%A5%E8%B4%A8%E9%87%8F%E8%BF%87%E7%A8%8B%E6%8E%A7%E5%88%B6%E4%B8%AD%E5%BA%94%E7%94%A8.html</loc>
-    <lastmod>2019-04-24T03:21:06.330Z</lastmod>
+    <lastmod>2019-04-24T05:21:45.000Z</lastmod>
     <data>
         <display>
         <title>贝雷参数与均匀性在沥青路面施工质量过程控制中应用</title>
@@ -27,14 +27,40 @@
          
         <tag>动态管理</tag>
          
-        <tag>SPSS</tag>
-         
         <tag>均匀性</tag>
          
          
            
              
               <breadCrumb title="沥青混合料" url="http://www.jiangjinchao.pro/categories/%E6%B2%A5%E9%9D%92%E6%B7%B7%E5%90%88%E6%96%99/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.jiangjinchao.pro//2018/%E8%AF%8F%E5%AE%89%E5%8D%B0%E8%B1%A1.html</loc>
+    <lastmod>2019-04-24T05:21:13.841Z</lastmod>
+    <data>
+        <display>
+        <title>诏安印象</title>
+        <pubTime>2018-04-03T23:58:55.815Z</pubTime>
+        
+        <tag>摄影</tag>
+         
+        <tag>街拍</tag>
+         
+        <tag>诏安</tag>
+         
+        <tag>生活</tag>
+         
+        <tag>手机</tag>
+         
+         
+           
+             
+              <breadCrumb title="摄影" url="http://www.jiangjinchao.pro/categories/%E6%91%84%E5%BD%B1/"/>
           
         </display>
     </data>
@@ -277,34 +303,6 @@
 
     
   <url>
-    <loc>http://www.jiangjinchao.pro//2018/%E8%AF%8F%E5%AE%89%E5%8D%B0%E8%B1%A1.html</loc>
-    <lastmod>2018-04-12T23:36:33.582Z</lastmod>
-    <data>
-        <display>
-        <title>诏安印象</title>
-        <pubTime>2018-04-03T23:58:55.815Z</pubTime>
-        
-        <tag>摄影</tag>
-         
-        <tag>街拍</tag>
-         
-        <tag>诏安</tag>
-         
-        <tag>生活</tag>
-         
-        <tag>手机</tag>
-         
-         
-           
-             
-              <breadCrumb title="摄影" url="http://www.jiangjinchao.pro/categories/%E6%91%84%E5%BD%B1/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.jiangjinchao.pro//2018/shuffle-algorithm.html</loc>
     <lastmod>2018-04-12T22:57:22.965Z</lastmod>
     <data>
@@ -532,15 +530,15 @@
         <title>JavaScript 语言精粹笔记1-语法、对象、函数</title>
         <pubTime>2018-03-30T00:50:23.541Z</pubTime>
         
+        <tag>闭包</tag>
+         
         <tag>面向对象</tag>
          
         <tag>函数</tag>
          
-        <tag>对象</tag>
-         
         <tag>this</tag>
          
-        <tag>闭包</tag>
+        <tag>对象</tag>
          
         <tag>作用域</tag>
          
@@ -774,11 +772,11 @@
         
         <tag>JavaScript</tag>
          
-        <tag>面向对象</tag>
-         
         <tag>慕课网</tag>
          
         <tag>ife</tag>
+         
+        <tag>面向对象</tag>
          
          
            
@@ -800,11 +798,11 @@
         
         <tag>JavaScript</tag>
          
+        <tag>闭包</tag>
+         
         <tag>慕课网</tag>
          
         <tag>ife</tag>
-         
-        <tag>闭包</tag>
          
          
            
@@ -928,11 +926,11 @@
         <title>百度Web前端技术学院(1)-HTML, CSS基础</title>
         <pubTime>2015-04-15T11:06:05.000Z</pubTime>
         
+        <tag>ife</tag>
+         
         <tag>HTML</tag>
          
         <tag>CSS</tag>
-         
-        <tag>ife</tag>
          
         <tag>Baidu</tag>
          
