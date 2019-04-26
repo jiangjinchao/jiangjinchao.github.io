@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang=zh>
+<html>
 <head>
-    <meta charset="utf-8">
-    
-    <title>Ubuntu16.04设置Pycharm桌面快捷键 | JinChao&#39;s Notes</title>
-    
-    
-        <meta name="keywords" content="Ubuntu,Pycharm" />
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Ubuntu下所有的快捷方式都在：1/usr/share/applications 解压这里我将pycharm下载并解压到了/home/snakeson/developer文件夹下 这里的pycharm.sh是批处理执行文件，prcharm.png是快捷方式图标 终端打开使用Ubuntu终端进行打开：方法一（使用vim）：1sudo vi  /usr/share/applications/pych">
+  <meta charset="utf-8">
+  
+  <title>Ubuntu16.04设置Pycharm桌面快捷键 | JinChao&#39;s Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <meta name="keywords" content="UbuntuPycharm" />
+  
+  
+  
+  
+  <meta name="description" content="Ubuntu下所有的快捷方式都在：1/usr/share/applications 解压这里我将pycharm下载并解压到了/home/snakeson/developer文件夹下 这里的pycharm.sh是批处理执行文件，prcharm.png是快捷方式图标 终端打开使用Ubuntu终端进行打开：方法一（使用vim）：1sudo vi  /usr/share/applications/pych">
 <meta name="keywords" content="Ubuntu,Pycharm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ubuntu16.04设置Pycharm桌面快捷键">
@@ -21,476 +23,145 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu16.04设置Pycharm桌面快捷键">
 <meta name="twitter:description" content="Ubuntu下所有的快捷方式都在：1/usr/share/applications 解压这里我将pycharm下载并解压到了/home/snakeson/developer文件夹下 这里的pycharm.sh是批处理执行文件，prcharm.png是快捷方式图标 终端打开使用Ubuntu终端进行打开：方法一（使用vim）：1sudo vi  /usr/share/applications/pych">
+  
+    <link rel="alternate" href="/atom.xml" title="JinChao&#39;s Notes" type="application/atom+xml">
+  
+  <link rel="icon" href="/css/images/favicon.ico">
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Montserrat:700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic" rel="stylesheet" type="text/css">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <style type="text/css">
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9749f0/00000000000000000001008f/27/l?subset_id=2&fvd=n5) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/90cf9f/000000000000000000010091/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:500;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/8a5494/000000000000000000013365/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:lighter;font-style:normal;}
+    @font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/d337d8/000000000000000000010095/27/l?subset_id=2&fvd=i4) format("woff2");font-weight:400;font-style:italic;}</style>
     
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
 
-    
-        <link rel="alternate" href="/atom.xml" title="JinChao&#39;s Notes" type="application/atom+xml" />
-    
+  <link rel="stylesheet" id="athemes-headings-fonts-css" href="//fonts.googleapis.com/css?family=Oswald%3A300%2C400%2C700&amp;ver=4.6.1" type="text/css" media="all">
+  <link rel="stylesheet" href="/css/style.css">
 
-    
-        <link rel="icon" href="/favicon.ico" />
-    
+  <script src="/js/jquery-3.1.1.min.js"></script>
 
-    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/libs/open-sans/styles.css">
-    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.css" >
+  <link rel="stylesheet" href="/css/fashion.css" >
+  <link rel="stylesheet" href="/css/glyphs.css" >
 
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
-    
-    
-        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
-    
-    
-        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
-    
-    
-    
-    
-
-
-    
-        <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    
 </head>
 
-<body>
-    <div id="container">
-        <header id="header">
-    <div id="header-main" class="header-inner">
-        <div class="outer">
-            <a href="/" id="logo">
-                <i class="logo"></i>
-                <span class="site-title">JinChao&#39;s Notes</span>
-            </a>
-            <nav id="main-nav">
-                
-                    <a class="main-nav-link" href="/">首页</a>
-                
-                    <a class="main-nav-link" href="/archives">归档</a>
-                
-                    <a class="main-nav-link" href="/categories">分类</a>
-                
-                    <a class="main-nav-link" href="/tags">标签</a>
-                
-                    <a class="main-nav-link" href="/about">关于</a>
-                
-            </nav>
-            
-            <div id="search-form-wrap">
 
-    <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
-        <button type="submit" class="search-form-submit"></button>
-    </form>
-    <div class="ins-search">
-    <div class="ins-search-mask"></div>
-    <div class="ins-search-container">
-        <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
-            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
-        </div>
-        <div class="ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
-    </div>
-</div>
-<script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: '文章',
-            PAGES: '页面',
-            CATEGORIES: '分类',
-            TAGS: '标签',
-            UNTITLED: '(未命名)',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
-</script>
-<script src="/js/insight.js"></script>
 
-</div>
-        </div>
-    </div>
-    <div id="main-nav-mobile" class="header-sub header-inner">
-        <table class="menu outer">
-            <tr>
-                
-                    <td><a class="main-nav-link" href="/">首页</a></td>
-                
-                    <td><a class="main-nav-link" href="/archives">归档</a></td>
-                
-                    <td><a class="main-nav-link" href="/categories">分类</a></td>
-                
-                    <td><a class="main-nav-link" href="/tags">标签</a></td>
-                
-                    <td><a class="main-nav-link" href="/about">关于</a></td>
-                
-                <td>
-                    
-    <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
-    </div>
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
 
-                </td>
-            </tr>
-        </table>
-    </div>
-</header>
 
-        <div class="outer">
-            
-            
-                <aside id="sidebar">
-   
-        
-    <div class="widget-wrap" id='categories'>
-        <h3 class="widget-title">
-            <span>分类</span>
-            &nbsp;
-            <a id='allExpand' href="#">
-                <i class="fa fa-angle-double-down fa-2x"></i>
-            </a>
-        </h3>
-        
-        
-        
-         <ul class="unstyled" id="tree" > 
-                    <li class="directory">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
-                            &nbsp;
-                            CSS
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2015/low-IE-click-empty-block-bug.html">在低版本 IE 中点击空 block 元素的问题</a></li>  </ul> 
-                    </li> 
-                    
-                    <li class="directory">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
-                            &nbsp;
-                            Excel
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2010/Excel绘制泰勒曲线级配图.html">Excel绘制泰勒曲线级配图</a></li>  </ul> 
-                    </li> 
-                    
-                    <li class="directory">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
-                            &nbsp;
-                            GitHub
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2018/git-clone-not-master-branch.html">Git 如何 clone 非 master 分支的代码</a></li>  </ul> 
-                    </li> 
-                    
-                    <li class="directory">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
-                            &nbsp;
-                            HTML CSS
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2015/baidu-ife-1.html">百度Web前端技术学院(1)-HTML, CSS基础</a></li>  </ul> 
-                    </li> 
-                    
-                    <li class="directory">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
-                            &nbsp;
-                            JavaScript
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2018/shuffle-algorithm.html">Fisher–Yates shuffle 洗牌算法</a></li>  <li class="file"><a href="/2018/how-to-use-babel.html">如何使用 babel</a></li>  <li class="file"><a href="/2018/JavaScript-good-parts-note2.html">JavaScript 语言精粹笔记2-方法、毒瘤等</a></li>  <li class="file"><a href="/2018/JavaScript-good-parts-note1.html">JavaScript 语言精粹笔记1-语法、对象、函数</a></li>  <li class="file"><a href="/2016/regular-expression-group.html">浅谈正则表达式中的分组和引用</a></li>  <li class="file"><a href="/2015/JavaScript-Net.html">JavaScript 阶段总结</a></li>  <li class="file"><a href="/2015/weinre.html">Weinre --WebApp 调试工具</a></li>  <li class="file"><a href="/2015/JavaScript-Object-Oriented.html">JavaScript 面向对象</a></li>  <li class="file"><a href="/2015/JavaScript-closure.html">JavaScript 中的闭包</a></li>  <li class="file"><a href="/2015/JavaScript-this.html">JavaScript 中的 this</a></li>  <li class="file"><a href="/2015/JavaScript-function.html">JavaScript 函数</a></li>  <li class="file"><a href="/2015/scope.html">JavaScript 作用域和作用域链</a></li>  <li class="file"><a href="/2015/baidu-ife-2-javascript.html">百度Web前端技术学院(2)-JavaScript 基础</a></li>  <li class="file"><a href="/2015/arrays-similar.html">判断两个数组是否相似 (arraysSimilar)</a></li>  </ul> 
-                    </li> 
-                    
-                    <li class="directory">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
-                            &nbsp;
-                            Markdown
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2018/Markdown 语法和 MWeb 写作使用说明.html">Markdown 语法和 MWeb 写作使用说明</a></li>  </ul> 
-                    </li> 
-                    
-                    <li class="directory">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
-                            &nbsp;
-                            Next
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2018/Next默认目录结构.html">Next默认目录结构</a></li>  </ul> 
-                    </li> 
-                    
-                    <li class="directory open">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder-open"></i>
-                            &nbsp;
-                            SnakeSon
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file active"><a href="/2018/Ubuntu16.04-pycharm-icon-setting.html">Ubuntu16.04设置Pycharm桌面快捷键</a></li>  </ul> 
-                    </li> 
-                    
-                    <li class="directory">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
-                            &nbsp;
-                            Sublime
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2015/sublimeLinter.html">代码校验工具 SublimeLinter 的安装与使用</a></li>  </ul> 
-                    </li> 
-                    
-                    <li class="directory">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
-                            &nbsp;
-                            Tools
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2015/front-end-tools.html">前端的一些资料和工具</a></li>  </ul> 
-                    </li> 
-                    
-                    <li class="directory">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
-                            &nbsp;
-                            VBA
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2010/基于Excel VBA应用三次样条插值法开发CBR曲线.html">基于Excel VBA应用三次样条插值法开发CBR曲线</a></li>  <li class="file"><a href="/2015/EXCEL VBA连接ACCESS数据.html">EXCEL VBA连接ACCESS数据库</a></li>  <li class="file"><a href="/2015/随机不重复数值.html">Excel VBA数值随机不重复函数</a></li>  <li class="file"><a href="/2010/利用VBA+加载宏制作‘奇进偶不进’修约函数.html">利用VBA+加载宏制作‘奇进偶不进’修约函数</a></li>  <li class="file"><a href="/2010/VBA调用‘规划求解’自动合成矿料级配.html">VBA调用‘规划求解’自动合成矿料级配</a></li>  </ul> 
-                    </li> 
-                    
-                    <li class="directory">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
-                            &nbsp;
-                            乳化沥青
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2018/非离子乳化沥青防水涂料的配方及制作工艺.html">非离子乳化沥青防水涂料的配方及制作工艺</a></li>  </ul> 
-                    </li> 
-                    
-                    <li class="directory">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
-                            &nbsp;
-                            工具
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2018/工具.html">工具</a></li>  </ul> 
-                    </li> 
-                    
-                    <li class="directory">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
-                            &nbsp;
-                            技术文档
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2012/水泥稳定碎石及级配碎石生产拌和楼标定.html">水泥稳定碎石及级配碎石生产拌和楼标定</a></li>  </ul> 
-                    </li> 
-                    
-                    <li class="directory">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
-                            &nbsp;
-                            摄影
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2018/诏安印象.html">诏安印象</a></li>  </ul> 
-                    </li> 
-                    
-                    <li class="directory">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
-                            &nbsp;
-                            改性乳化沥青
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2018/SBS胶乳改性乳化沥青稳定性研究.html">SBS胶乳改性乳化沥青稳定性研究</a></li>  </ul> 
-                    </li> 
-                    
-                    <li class="directory">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
-                            &nbsp;
-                            施工方案
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2018/橡胶沥青应力吸收层施工方案.html">橡胶沥青应力吸收层施工方案</a></li>  </ul> 
-                    </li> 
-                    
-                    <li class="directory">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
-                            &nbsp;
-                            沥青混合料
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2016/贝雷参数与均匀性在沥青路面施工质量过程控制中应用.html">贝雷参数与均匀性在沥青路面施工质量过程控制中应用</a></li>  <li class="file"><a href="/2013/沥青混合料贝雷参数与VMA模型建立.html">沥青混合料贝雷参数与VMA模型建立</a></li>  <li class="file"><a href="/2015/应用SPSS进行沥青路面压实度的动态控制.html">应用SPSS进行沥青路面压实度的动态控制</a></li>  <li class="file"><a href="/2015/沥青混合料级配优选参数SSC.html">沥青混合料级配优选参数SSC</a></li>  </ul> 
-                    </li> 
-                    
-                    <li class="directory">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
-                            &nbsp;
-                            沥青路面
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2015/浅谈倒装式沥青路面结构在福建高速中的应用.html">浅谈倒装式沥青路面结构在福建高速中的应用</a></li>  </ul> 
-                    </li> 
-                    
-                    <li class="directory">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
-                            &nbsp;
-                            配合比
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2012/体积法预估最佳沥青用量在混合料配合比设计中的应用 .html">体积法预估最佳沥青用量在混合料配合比设计中的应用</a></li>  </ul> 
-                    </li> 
-                    
-                    <li class="directory">
-                        <a href="#" data-role="directory">
-                            <i class="fa fa-folder"></i>
-                            &nbsp;
-                            音乐
-                        </a>
-                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2017/听她的声音，会上瘾.html">听她的声音，会上瘾</a></li>  </ul> 
-                    </li> 
-                     <li class="file"><a href="/2018/hello-world.html">Hello World</a></li>  </ul> 
-    </div>
-    <script>
-        $(document).ready(function() {
-            var iconFolderOpenClass  = 'fa-folder-open';
-            var iconFolderCloseClass = 'fa-folder';
-            var iconAllExpandClass = 'fa-angle-double-down';
-            var iconAllPackClass = 'fa-angle-double-up';
-            // Handle directory-tree expansion:
-            // 左键单独展开目录
-            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
-                event.preventDefault();
+  
+  
+  <div class="site-header-image">
+    <img id="originBg" width="100%" alt="Hike News" src="">
+  </div>
 
-                var icon = $(this).children('.fa');
-                var expanded = icon.hasClass(iconFolderOpenClass);
-                var subtree = $(this).siblings('ul');
-                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
-                if (expanded) {
-                    if (typeof subtree != 'undefined') {
-                        subtree.slideUp({ duration: 100 });
-                    }
-                    icon.addClass(iconFolderCloseClass);
-                } else {
-                    if (typeof subtree != 'undefined') {
-                        subtree.slideDown({ duration: 100 });
-                    }
-                    icon.addClass(iconFolderOpenClass);
-                }
-            });
-            // 右键展开下属所有目录
-            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
-                event.preventDefault();
-                
-                var icon = $(this).children('.fa');
-                var expanded = icon.hasClass(iconFolderOpenClass);
-                var listNode = $(this).siblings('ul');
-                var subtrees = $.merge(listNode.find('li ul'), listNode);
-                var icons = $.merge(listNode.find('.fa'), icon);
-                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
-                if(expanded) {
-                    subtrees.slideUp({ duration: 100 });
-                    icons.addClass(iconFolderCloseClass);
-                } else {
-                    subtrees.slideDown({ duration: 100 });
-                    icons.addClass(iconFolderOpenClass);
-                }
-            })
-            // 展开关闭所有目录按钮
-            $(document).on('click', '#allExpand', function (event) {
-                event.preventDefault();
-                
-                var icon = $(this).children('.fa');
-                var expanded = icon.hasClass(iconAllExpandClass);
-                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
-                if(expanded) {
-                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
-                    $('#categories li ul').slideDown({ duration: 100 });
-                    icon.addClass(iconAllPackClass);
-                } else {
-                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
-                    $('#categories li ul').slideUp({ duration: 100 });
-                    icon.addClass(iconAllExpandClass);
-                }
-            });  
-        });
+  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src="">
+  </div>
+
+  <script>
+        var imgUrls = "css/images/pose01.jpg,https://source.unsplash.com/collection/954550/1920x1080,https://source.unsplash.com/collection/954550/1920x1081".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='/' + imgUrls[random];
+          document.getElementById("blurBg").src='/' + imgUrls[random];
+        }
     </script>
 
-    
-        
-    <div class="widget-wrap">
-        <h3 class="widget-title"><span>标签云</span></h3>
-        <div class="widget tagcloud">
-            <a href="/tags/ACCESS/" style="font-size: 10px;">ACCESS</a> <a href="/tags/Array/" style="font-size: 10px;">Array</a> <a href="/tags/Baidu/" style="font-size: 11.43px;">Baidu</a> <a href="/tags/CBR/" style="font-size: 10px;">CBR</a> <a href="/tags/CSS/" style="font-size: 15.71px;">CSS</a> <a href="/tags/ES2015/" style="font-size: 10px;">ES2015</a> <a href="/tags/ES5/" style="font-size: 10px;">ES5</a> <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/Excel/" style="font-size: 17.14px;">Excel</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/HTML/" style="font-size: 14.29px;">HTML</a> <a href="/tags/IE/" style="font-size: 10px;">IE</a> <a href="/tags/JavaScript/" style="font-size: 20px;">JavaScript</a> <a href="/tags/MWeb/" style="font-size: 10px;">MWeb</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/Next/" style="font-size: 10px;">Next</a> <a href="/tags/Pycharm/" style="font-size: 10px;">Pycharm</a> <a href="/tags/Regular/" style="font-size: 11.43px;">Regular</a> <a href="/tags/SBS/" style="font-size: 10px;">SBS</a> <a href="/tags/SPSS/" style="font-size: 11.43px;">SPSS</a> <a href="/tags/SSC/" style="font-size: 10px;">SSC</a> <a href="/tags/Sublime/" style="font-size: 10px;">Sublime</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/VBA/" style="font-size: 15.71px;">VBA</a> <a href="/tags/VMA/" style="font-size: 11.43px;">VMA</a> <a href="/tags/WebApp/" style="font-size: 10px;">WebApp</a> <a href="/tags/Weinre/" style="font-size: 10px;">Weinre</a> <a href="/tags/babel/" style="font-size: 10px;">babel</a> <a href="/tags/csslint/" style="font-size: 10px;">csslint</a> <a href="/tags/ife/" style="font-size: 18.57px;">ife</a> <a href="/tags/jshint/" style="font-size: 10px;">jshint</a> <a href="/tags/reveal/" style="font-size: 10px;">reveal</a> <a href="/tags/shuffle/" style="font-size: 10px;">shuffle</a> <a href="/tags/task/" style="font-size: 10px;">task</a> <a href="/tags/this/" style="font-size: 11.43px;">this</a> <a href="/tags/tools/" style="font-size: 10px;">tools</a> <a href="/tags/三次样条插值法/" style="font-size: 10px;">三次样条插值法</a> <a href="/tags/乱序/" style="font-size: 10px;">乱序</a> <a href="/tags/乳化沥青/" style="font-size: 10px;">乳化沥青</a> <a href="/tags/代码/" style="font-size: 10px;">代码</a> <a href="/tags/体积法/" style="font-size: 10px;">体积法</a> <a href="/tags/作用域/" style="font-size: 11.43px;">作用域</a> <a href="/tags/倒装式/" style="font-size: 10px;">倒装式</a> <a href="/tags/公路/" style="font-size: 11.43px;">公路</a> <a href="/tags/兼容性/" style="font-size: 10px;">兼容性</a> <a href="/tags/函数/" style="font-size: 15.71px;">函数</a> <a href="/tags/分支/" style="font-size: 10px;">分支</a> <a href="/tags/分组/" style="font-size: 10px;">分组</a> <a href="/tags/加载宏/" style="font-size: 10px;">加载宏</a> <a href="/tags/动态管理/" style="font-size: 11.43px;">动态管理</a> <a href="/tags/压实度/" style="font-size: 11.43px;">压实度</a> <a href="/tags/均匀性/" style="font-size: 10px;">均匀性</a> <a href="/tags/奇进偶不进/" style="font-size: 10px;">奇进偶不进</a> <a href="/tags/对象/" style="font-size: 10px;">对象</a> <a href="/tags/工程质量/" style="font-size: 10px;">工程质量</a> <a href="/tags/工艺/" style="font-size: 11.43px;">工艺</a> <a href="/tags/应力吸收层/" style="font-size: 10px;">应力吸收层</a> <a href="/tags/思维导图/" style="font-size: 10px;">思维导图</a> <a href="/tags/慕课网/" style="font-size: 17.14px;">慕课网</a> <a href="/tags/手机/" style="font-size: 10px;">手机</a> <a href="/tags/技能树/" style="font-size: 10px;">技能树</a> <a href="/tags/拌和楼标定/" style="font-size: 10px;">拌和楼标定</a> <a href="/tags/摄影/" style="font-size: 10px;">摄影</a> <a href="/tags/改性乳化沥青/" style="font-size: 10px;">改性乳化沥青</a> <a href="/tags/数据库/" style="font-size: 10px;">数据库</a> <a href="/tags/施工/" style="font-size: 10px;">施工</a> <a href="/tags/模型/" style="font-size: 11.43px;">模型</a> <a href="/tags/橡胶沥青/" style="font-size: 10px;">橡胶沥青</a> <a href="/tags/正则/" style="font-size: 11.43px;">正则</a> <a href="/tags/水泥稳定碎石/" style="font-size: 10px;">水泥稳定碎石</a> <a href="/tags/沥青/" style="font-size: 10px;">沥青</a> <a href="/tags/沥青混合料/" style="font-size: 15.71px;">沥青混合料</a> <a href="/tags/沥青路面/" style="font-size: 12.86px;">沥青路面</a> <a href="/tags/泰勒曲线/" style="font-size: 10px;">泰勒曲线</a> <a href="/tags/洗牌/" style="font-size: 10px;">洗牌</a> <a href="/tags/生活/" style="font-size: 10px;">生活</a> <a href="/tags/目录/" style="font-size: 10px;">目录</a> <a href="/tags/稳定性/" style="font-size: 10px;">稳定性</a> <a href="/tags/算法/" style="font-size: 11.43px;">算法</a> <a href="/tags/级配/" style="font-size: 14.29px;">级配</a> <a href="/tags/结构/" style="font-size: 11.43px;">结构</a> <a href="/tags/街拍/" style="font-size: 10px;">街拍</a> <a href="/tags/规划求解/" style="font-size: 10px;">规划求解</a> <a href="/tags/论文/" style="font-size: 15.71px;">论文</a> <a href="/tags/诏安/" style="font-size: 10px;">诏安</a> <a href="/tags/试验/" style="font-size: 14.29px;">试验</a> <a href="/tags/语法/" style="font-size: 10px;">语法</a> <a href="/tags/调试工具/" style="font-size: 10px;">调试工具</a> <a href="/tags/贝雷参数/" style="font-size: 12.86px;">贝雷参数</a> <a href="/tags/路面/" style="font-size: 10px;">路面</a> <a href="/tags/配合比/" style="font-size: 10px;">配合比</a> <a href="/tags/配合比设计/" style="font-size: 10px;">配合比设计</a> <a href="/tags/配方/" style="font-size: 10px;">配方</a> <a href="/tags/配色/" style="font-size: 10px;">配色</a> <a href="/tags/闭包/" style="font-size: 11.43px;">闭包</a> <a href="/tags/防水/" style="font-size: 10px;">防水</a> <a href="/tags/面向对象/" style="font-size: 11.43px;">面向对象</a> <a href="/tags/音乐/" style="font-size: 10px;">音乐</a>
-        </div>
-    </div>
 
-    
-    <div id="toTop" class="fa fa-angle-up"></div>
-</aside>
+
+
+<header id="allheader" class="site-header" role="banner" 
+   style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);"  >
+  <div class="clearfix container">
+      <div class="site-branding">
+
+          <h1 class="site-title">
             
-            <section id="main"><article id="post-Ubuntu16.04-pycharm-icon-setting" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-                    <div class="article-meta">
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/SnakeSon/">SnakeSon</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Pycharm/">Pycharm</a>, <a class="tag-link" href="/tags/Ubuntu/">Ubuntu</a>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2018/Ubuntu16.04-pycharm-icon-setting.html">
-            <time datetime="2018-03-30T01:15:16.124Z" itemprop="datePublished">2018-03-30</time>
-        </a>
-    </div>
-
-
-                        
-                            <i class="fa fa-bar-chart"></i>
-                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
-                        
-                        
-                            <div class="article-meta-button">
-                                <a href='https://github.com/zthxxx/Wiki-site/raw/writing/source/_posts/Ubuntu16.04-pycharm-icon-setting.md'> Source </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a href='https://github.com/zthxxx/Wiki-site/edit/writing/source/_posts/Ubuntu16.04-pycharm-icon-setting.md'> Edit </a>
-                            </div>
-                            <div class="article-meta-button">
-                                <a href='https://github.com/zthxxx/Wiki-site/commits/writing/source/_posts/Ubuntu16.04-pycharm-icon-setting.md'> History </a>
-                            </div>
-                        
-                    </div>
-                
-                
-    
-        <h1 class="article-title" itemprop="name">
-            Ubuntu16.04设置Pycharm桌面快捷键
-        </h1>
-    
-
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-        
+              <a href="/" title="JinChao&#39;s Notes" rel="home"> JinChao&#39;s Notes </a>
             
+          </h1>
+          
+          
+            <div class="site-description">The dog equally study, the gentleman equally plays.</div>
+          
+            
+          <nav id="main-navigation" class="main-navigation" role="navigation">
+            <a class="nav-open">Menu</a>
+            <a class="nav-close">Close</a>
+
+            <div class="clearfix sf-menu">
+              <ul id="main-nav" class="menu sf-js-enabled sf-arrows"  style="touch-action: pan-y;">
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">首页</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">归档</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">分类</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">标签</a> </li>
+                    
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">关于</a> </li>
+                    
+              </ul>
+            </div>
+          </nav>
+
+      </div>
+  </div>
+</header>
+
+
+  <div id="container">
+    <div id="wrap">
+            
+      <div id="content" class="outer">
         
+          <section id="main" style="float:none;"><article id="post-Ubuntu16.04-pycharm-icon-setting" style="width: 66%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
         
-            <h2 id="Ubuntu下所有的快捷方式都在："><a href="#Ubuntu下所有的快捷方式都在：" class="headerlink" title="Ubuntu下所有的快捷方式都在："></a>Ubuntu下所有的快捷方式都在：</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/share/applications</span><br></pre></td></tr></table></figure>
+  
+    <h1 class="thumb" class="article-title" itemprop="name">
+      Ubuntu16.04设置Pycharm桌面快捷键
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/Ubuntu16.04-pycharm-icon-setting.html" class="article-date">
+	  <time datetime="2018-03-30T01:15:16.124Z" itemprop="datePublished">三月 30, 2018</time>
+	</a>
+
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/SnakeSon/">SnakeSon</a>
+ 
+      
+	<span id="busuanzi_container_page_pv">
+	  本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+	</span>
+
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Ubuntu下所有的快捷方式都在："><a href="#Ubuntu下所有的快捷方式都在：" class="headerlink" title="Ubuntu下所有的快捷方式都在："></a>Ubuntu下所有的快捷方式都在：</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/share/applications</span><br></pre></td></tr></table></figure>
 <h2 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h2><p>这里我将pycharm下载并解压到了/home/snakeson/developer文件夹下</p>
 <p>这里的pycharm.sh是批处理执行文件，prcharm.png是快捷方式图标</p>
 <h2 id="终端打开"><a href="#终端打开" class="headerlink" title="终端打开"></a>终端打开</h2><p>使用Ubuntu终端进行打开：<br>方法一（使用vim）：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vi  /usr/share/applications/pycharm.desktop</span><br></pre></td></tr></table></figure></p>
@@ -503,110 +174,203 @@
 <h2 id="添加可执行权限"><a href="#添加可执行权限" class="headerlink" title="添加可执行权限"></a>添加可执行权限</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod +x /usr/share/applications/pycharm.desktop</span><br></pre></td></tr></table></figure>
 <h2 id="拷贝到桌面"><a href="#拷贝到桌面" class="headerlink" title="拷贝到桌面"></a>拷贝到桌面</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">将/usr/share/applications/pycharm.desktop文件拷贝到桌面，双击即可运行。</span><br></pre></td></tr></table></figure>
 
-            </div>
-        
-        <footer class="article-footer">
-        </footer>
+      
     </div>
-</article>
+    <footer class="entry-meta entry-footer">
+      
+	<span class="ico-folder"></span>
+    <a class="article-category-link" href="/categories/SnakeSon/">SnakeSon</a>
+
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Pycharm/">Pycharm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntu/">Ubuntu</a></li></ul>
+
+      
+        
+	<div id="comment">
+		<!-- 来必力City版安装代码 -->
+		<div id="lv-container" data-id="city" data-uid="MTAyMC8yOTQ4MS82MDQ5">
+		<script type="text/javascript">
+		   (function(d, s) {
+		       var j, e = d.getElementsByTagName(s)[0];
+
+		       if (typeof LivereTower === 'function') { return; }
+
+		       j = d.createElement(s);
+		       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+		       j.async = true;
+
+		       e.parentNode.insertBefore(j, e);
+		   })(document, 'script');
+		</script>
+		<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+		</div>
+		<!-- City版安装代码已完成 -->
+	</div>
 
 
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
     
 <nav id="article-nav">
-    
-        <a href="/2018/SBS胶乳改性乳化沥青稳定性研究.html" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">上一篇</strong>
-            <div class="article-nav-title">
-                
-                    SBS胶乳改性乳化沥青稳定性研究
-                
-            </div>
-        </a>
-    
-    
-        <a href="/2018/git-clone-not-master-branch.html" id="article-nav-older" class="article-nav-link-wrap">
-            <strong class="article-nav-caption">下一篇</strong>
-            <div class="article-nav-title">Git 如何 clone 非 master 分支的代码</div>
-        </a>
-    
+  
+    <a href="/2018/SBS胶乳改性乳化沥青稳定性研究.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          SBS胶乳改性乳化沥青稳定性研究
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/shuffle-algorithm.html" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">Fisher–Yates shuffle 洗牌算法</div>
+    </a>
+  
 </nav>
 
+  
+</article>
 
+<!-- Table of Contents -->
 
-
-
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
     
+      <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Ubuntu下所有的快捷方式都在："><span class="nav-number">1.</span> <span class="nav-text">Ubuntu下所有的快捷方式都在：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解压"><span class="nav-number">2.</span> <span class="nav-text">解压</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#终端打开"><span class="nav-number">3.</span> <span class="nav-text">终端打开</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#张贴"><span class="nav-number">4.</span> <span class="nav-text">张贴</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加可执行权限"><span class="nav-number">5.</span> <span class="nav-text">添加可执行权限</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拷贝到桌面"><span class="nav-number">6.</span> <span class="nav-text">拷贝到桌面</span></a></li></ol>
     
-
-
-
-
-<!-- baidu url auto push script -->
-<script type="text/javascript">
-    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
-</script>     
-</section>
-        </div>
-        <footer id="footer">
-    <div class="outer">
-        <div id="footer-info" class="inner">
-            Jiang JinChao &copy; 2019 
-            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a>
-            <br> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>
-            
-                <br>
-                <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
-                &nbsp;|&nbsp;
-                <span id="busuanzi_container_site_pv"><i class="fa fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
-            
-        </div>
     </div>
+  </aside>
+</section>
+        
+      </div>
+
+    </div>
+    <!-- <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories" class="mobile-nav-link">Categories</a>
+  
+    <a href="/tags" class="mobile-nav-link">Tags</a>
+  
+    <a href="/about" class="mobile-nav-link">About</a>
+  
+</nav> -->
+    <footer id="footer" class="site-footer">
+  
+
+  <div class="clearfix container">
+      <div class="site-info">
+	      &copy; 2019 JinChao&#39;s Notes All Rights Reserved.
+        
+            <span id="busuanzi_container_site_uv">
+              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
+              本站总访问量<span id="busuanzi_value_site_pv"></span>次
+            </span>
+          
+      </div>
+      <div class="site-credit">
+        Theme by <a href="https://github.com/iTimeTraveler/hexo-theme-hipaper" target="_blank">hipaper</a>
+      </div>
+  </div>
 </footer>
 
-        
 
+<!-- min height -->
+
+<script>
+    var wrapdiv = document.getElementById("wrap");
+    var contentdiv = document.getElementById("content");
+
+    wrapdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+    contentdiv.style.minHeight = document.body.offsetHeight - document.getElementById("allheader").offsetHeight - document.getElementById("footer").offsetHeight + "px";
+
+
+    <!-- headerblur min height -->
     
-        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
-        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+      var headerblur = document.getElementById("header-blur");
+      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
     
     
-        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+</script>
     
-    
-        <script type="text/x-mathjax-config">
+<div style="display: none;">
+  <script src="https://s11.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+</div>
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
     MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true,
-            TeX: {
-                equationNumbers: {
-                  autoNumber: 'AMS'
-                }
-            }
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
     });
 </script>
-<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
-<!-- Custom Scripts -->
+
+<script src="/js/script.js"></script>
+<script src="/js/bootstrap.js"></script>
 <script src="/js/main.js"></script>
 
-    </div>
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
+  </div>
+
+
+
+	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+	</script>
+
+
+
+
+
+
+  </div>
+
+  <a id="rocket" href="#top" class=""></a>
+  <script type="text/javascript" src="/js/totop.js" async=""></script>
 </body>
 </html>
